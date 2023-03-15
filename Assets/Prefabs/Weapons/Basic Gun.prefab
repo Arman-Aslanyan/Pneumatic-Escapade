@@ -4887,12 +4887,9 @@ MonoBehaviour:
   Attack: 323
   reload: 114
   spark: {fileID: 7815057208917191966, guid: 771e328d74d83d14e913f905f69abf0e, type: 3}
-  reloadTime: 1
-  gunDamage: 2
-  currentAmmo: 15
-  ammoMax: 15
-  firingSpeed: 0.05
+  stats: {fileID: 11400000, guid: 799dbf645cc558841a20c943600edf36, type: 2}
   flash: {fileID: 7815057208917191966, guid: 771e328d74d83d14e913f905f69abf0e, type: 3}
   canFire: 0
   firing: 0
   reloading: 0
+  rotationSpeed: 45

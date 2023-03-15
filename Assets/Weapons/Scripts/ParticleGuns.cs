@@ -10,7 +10,7 @@ public class ParticleGuns : MonoBehaviour
     private ParticleSystem Bullet;
 
     public GameObject spark;
-    public 
+    public WeaponStats stats;
 
     public GameObject flash;
 
@@ -37,16 +37,16 @@ public class ParticleGuns : MonoBehaviour
         Quaternion goalRotation = Quaternion.LookRotation(lookDirection, Vector3.forward);
         transform.rotation = Quaternion.RotateTowards(transform.rotation, goalRotation, rotationSpeed * Time.deltaTime);
 
-        if (Input.GetKey(Attack) && canFire == true && currentAmmo > 0 && firing == false)
+        if (Input.GetKey(Attack) && canFire == true && stats.currentAmmo > 0 && firing == false)
         {
             Shooting();
         }
 
-        if (Input.GetKeyDown(reload) && currentAmmo != ammoMax && firing == false && reloading != true)
+        if (Input.GetKeyDown(reload) && stats.currentAmmo != stats.ammoMax && firing == false && reloading != true)
         {
             Reloading();
         }
-        if (currentAmmo == 0 && firing == false && reloading != true)
+        if (stats.currentAmmo == 0 && firing == false && reloading != true)
         {
             Reloading();
         }
@@ -64,7 +64,7 @@ public class ParticleGuns : MonoBehaviour
 
         if (other.TryGetComponent(out Combat enemy))
         {
-            enemy.TakeDamage(gunDamage);
+            enemy.TakeDamage(stats.gunDamage);
         }
     }
 
@@ -75,8 +75,8 @@ public class ParticleGuns : MonoBehaviour
 
         Bullet.Play();
 
-        currentAmmo--;
-        Invoke("ResetShoot", firingSpeed);
+        stats.currentAmmo--;
+        Invoke("ResetShoot", stats.firingSpeed);
 
     }
 
@@ -95,11 +95,11 @@ public class ParticleGuns : MonoBehaviour
     {
         canFire = false;
         reloading = true;
-        Invoke("ReloadingDone", reloadTime);
+        Invoke("ReloadingDone", stats.reloadTime);
     }
     public void ReloadingDone()
     {
-        currentAmmo = ammoMax;
+        stats.currentAmmo = stats.ammoMax;
         reloading = false;
         canFire = true;
     }
