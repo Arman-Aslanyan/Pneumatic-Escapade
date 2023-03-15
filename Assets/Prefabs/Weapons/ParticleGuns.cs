@@ -10,14 +10,7 @@ public class ParticleGuns : MonoBehaviour
     private ParticleSystem Bullet;
 
     public GameObject spark;
-    public float reloadTime;
-
-    public float gunDamage;
-
-    public float currentAmmo;
-    public float ammoMax;
-
-    public float firingSpeed;
+    public 
 
     public GameObject flash;
 
@@ -25,7 +18,11 @@ public class ParticleGuns : MonoBehaviour
     public bool firing;
     public bool reloading;
 
+
+
     List<ParticleCollisionEvent> colEvents = new List<ParticleCollisionEvent>();
+    public float rotationSpeed = 45; // degrees per second
+
 
     private void Start()
     {
@@ -35,14 +32,14 @@ public class ParticleGuns : MonoBehaviour
     }
     private void Update()
     {
+        Vector3 mousePosWorld = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector3 lookDirection = (mousePosWorld - transform.position).normalized;
+        Quaternion goalRotation = Quaternion.LookRotation(lookDirection, Vector3.forward);
+        transform.rotation = Quaternion.RotateTowards(transform.rotation, goalRotation, rotationSpeed * Time.deltaTime);
 
         if (Input.GetKey(Attack) && canFire == true && currentAmmo > 0 && firing == false)
         {
             Shooting();
-        }
-        if (Input.GetKeyDown(Attack) && currentAmmo <= 0 && firing == false)
-        {
-            ShootingBlanks();
         }
 
         if (Input.GetKeyDown(reload) && currentAmmo != ammoMax && firing == false && reloading != true)
