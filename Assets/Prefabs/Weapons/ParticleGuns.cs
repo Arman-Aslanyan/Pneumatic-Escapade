@@ -65,10 +65,10 @@ public class ParticleGuns : MonoBehaviour
             Instantiate(spark, colEvents[i].intersection, Quaternion.LookRotation(colEvents[i].normal));
         }
 
-        // if (other.TryGetComponent(out EnemyHP enemy))
-        //{
-        // enemy.AutoDamage(gunDamage);
-        //}
+        if (other.TryGetComponent(out Combat enemy))
+        {
+            enemy.TakeDamage(gunDamage);
+        }
     }
 
     public void Shooting()

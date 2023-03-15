@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3804444044233217295}
   - component: {fileID: 1416526016062633474}
   m_Layer: 3
-  m_Name: Basic Gun
+  m_Name: Beam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -170,7 +170,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 50
+      scalar: 200
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -868,7 +868,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0
+      scalar: 10
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -978,7 +978,7 @@ ParticleSystem:
       countCurve:
         serializedVersion: 2
         minMaxState: 0
-        scalar: 1
+        scalar: 2
         minScalar: 30
         maxCurve:
           serializedVersion: 2
@@ -3736,7 +3736,7 @@ ParticleSystem:
     m_Bounce:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 0
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -4887,11 +4887,11 @@ MonoBehaviour:
   Attack: 323
   reload: 114
   spark: {fileID: 7815057208917191966, guid: 771e328d74d83d14e913f905f69abf0e, type: 3}
-  reloadTime: 1
+  reloadTime: 20
   gunDamage: 2
-  currentAmmo: 15
-  ammoMax: 15
-  firingSpeed: 0.05
+  currentAmmo: 1000
+  ammoMax: 1000
+  firingSpeed: 0
   flash: {fileID: 7815057208917191966, guid: 771e328d74d83d14e913f905f69abf0e, type: 3}
   canFire: 0
   firing: 0

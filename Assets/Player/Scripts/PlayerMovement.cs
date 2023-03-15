@@ -10,6 +10,7 @@ public class PlayerVals : MonoBehaviour
     public Rigidbody2D rb;
     public Collider2D coll;
 
+    public Combat combat;
     public PlayerVals()
     {
         obj = gameObject;
@@ -17,6 +18,7 @@ public class PlayerVals : MonoBehaviour
         trans = obj.transform;
         rb = obj.GetComponent<Rigidbody2D>();
         coll = obj.GetComponent<Collider2D>();
+        combat = obj.GetComponent<Combat>();
     }
 }
 

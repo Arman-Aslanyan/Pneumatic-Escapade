@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7032620300620519863}
   - component: {fileID: 7032620300620519816}
   - component: {fileID: 7032620300620519817}
+  - component: {fileID: 1578979113868443832}
   m_Layer: 0
   m_Name: Temp_Player
   m_TagString: Player
@@ -148,3 +149,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   canMove: 1
+--- !u!114 &1578979113868443832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7032620300620519818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34f85664c27408e41b7864d52b5764d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentHP: 100
+  maxHP: 100
+  i_frames: 0

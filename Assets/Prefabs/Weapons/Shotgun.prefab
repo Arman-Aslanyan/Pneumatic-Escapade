@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8356561799129503450}
   - component: {fileID: 3804444044233217295}
   - component: {fileID: 1416526016062633474}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Shotgun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3613,8 +3613,8 @@ ParticleSystem:
       maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
-        key0: {r: 1, g: 1, b: 1, a: 1}
-        key1: {r: 1, g: 1, b: 1, a: 1}
+        key0: {r: 0, g: 0, b: 0, a: 1}
+        key1: {r: 0.8113208, g: 0, b: 0, a: 1}
         key2: {r: 0, g: 0, b: 0, a: 0}
         key3: {r: 0, g: 0, b: 0, a: 0}
         key4: {r: 0, g: 0, b: 0, a: 0}
@@ -3669,7 +3669,7 @@ ParticleSystem:
         m_Mode: 0
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
-    range: {x: 0, y: 1}
+    range: {x: 77.11, y: 45.9}
   CollisionModule:
     enabled: 1
     serializedVersion: 4
@@ -3682,9 +3682,9 @@ ParticleSystem:
     m_Planes: []
     m_Dampen:
       serializedVersion: 2
-      minMaxState: 0
-      scalar: 1
-      minScalar: 0
+      minMaxState: 3
+      scalar: 0.5
+      minScalar: 0.01
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -3736,7 +3736,7 @@ ParticleSystem:
     m_Bounce:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 2
+      scalar: 1
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -3844,11 +3844,11 @@ ParticleSystem:
     radiusScale: 1
     collidesWith:
       serializedVersion: 2
-      m_Bits: 4294967295
+      m_Bits: 55
     maxCollisionShapes: 256
     quality: 0
     voxelSize: 0.5
-    collisionMessages: 0
+    collisionMessages: 1
     collidesWithDynamic: 1
     interiorCollisions: 0
   TriggerModule:
@@ -4887,11 +4887,11 @@ MonoBehaviour:
   Attack: 323
   reload: 114
   spark: {fileID: 7815057208917191966, guid: 771e328d74d83d14e913f905f69abf0e, type: 3}
-  reloadTime: 1
-  gunDamage: 0
-  currentAmmo: 100
-  ammoMax: 100
-  firingSpeed: 0.06
+  reloadTime: 0.8
+  gunDamage: 2
+  currentAmmo: 1
+  ammoMax: 1
+  firingSpeed: 0.8
   flash: {fileID: 7815057208917191966, guid: 771e328d74d83d14e913f905f69abf0e, type: 3}
   canFire: 0
   firing: 0
