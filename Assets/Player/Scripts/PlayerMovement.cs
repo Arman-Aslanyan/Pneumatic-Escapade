@@ -30,7 +30,6 @@ public class PlayerMovement : MonoBehaviour
     //private Animator animator;
     private Vector2 movement;
     public bool canMove = true;
-    internal bool isMoving = false;
 
     // Start is called before the first frame update
     void Start()
@@ -43,12 +42,12 @@ public class PlayerMovement : MonoBehaviour
     // Update called once per frame
     void Update()
     {
-        if (!isMoving)
+        if (canMove)
         {
             movement.x = Input.GetAxisRaw("Horizontal");
             movement.y = Input.GetAxisRaw("Vertical");
 
-            if (canMove && !movement.Equals(Vector2.zero))
+            if (!movement.Equals(Vector2.zero))
             {
                 var targetPos = transform.position;
                 targetPos.x += movement.x;
