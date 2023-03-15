@@ -12,7 +12,7 @@ public class ParticleGuns : MonoBehaviour
     public GameObject spark;
     public float reloadTime;
 
-    public float damageAuto;
+    public float gunDamage;
 
     public float currentAmmo;
     public float ammoMax;
@@ -65,9 +65,9 @@ public class ParticleGuns : MonoBehaviour
             Instantiate(spark, colEvents[i].intersection, Quaternion.LookRotation(colEvents[i].normal));
         }
 
-       // if (other.TryGetComponent(out EnemyHP enemy))
+        // if (other.TryGetComponent(out EnemyHP enemy))
         //{
-           // enemy.AutoDamage(damageAuto);
+        // enemy.AutoDamage(gunDamage);
         //}
     }
 
