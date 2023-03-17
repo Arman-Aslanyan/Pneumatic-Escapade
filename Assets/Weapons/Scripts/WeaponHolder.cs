@@ -6,6 +6,9 @@ public class WeaponHolder : MonoBehaviour
 {
     public int weaponSelected = 0;
 
+    public KeyCode weaponUp;
+    public KeyCode weaponDown;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -15,6 +18,7 @@ public class WeaponHolder : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+ 
         int previousSelectedWeapon = weaponSelected;
 
         if (Input.GetKeyDown(KeyCode.Alpha1))
@@ -40,6 +44,7 @@ public class WeaponHolder : MonoBehaviour
         {
             SelectWeapon();
         }
+
 
     }
 
