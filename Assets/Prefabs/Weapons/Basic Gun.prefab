@@ -286,7 +286,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 0.64
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -669,7 +669,7 @@ ParticleSystem:
     radiusThickness: 1
     donutRadius: 0.2
     m_Position: {x: 0, y: 0, z: 0}
-    m_Rotation: {x: 0, y: 0, z: 0}
+    m_Rotation: {x: -90, y: 0, z: 0}
     m_Scale: {x: 1, y: 0, z: 1}
     placementMode: 0
     m_MeshMaterialIndex: 0
@@ -4047,7 +4047,7 @@ ParticleSystem:
     ribbonCount: 1
     shadowBias: 0.5
     worldSpace: 0
-    dieWithParticles: 1
+    dieWithParticles: 0
     sizeAffectsWidth: 1
     sizeAffectsLifetime: 0
     inheritParticleColor: 1
@@ -4886,10 +4886,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Attack: 323
   reload: 114
-  spark: {fileID: 7815057208917191966, guid: 771e328d74d83d14e913f905f69abf0e, type: 3}
+  spark: {fileID: 5500821477891297817, guid: cd696e0f9eda6404a971d3378aeb7923, type: 3}
   stats: {fileID: 11400000, guid: 799dbf645cc558841a20c943600edf36, type: 2}
   flash: {fileID: 7815057208917191966, guid: 771e328d74d83d14e913f905f69abf0e, type: 3}
   canFire: 0
   firing: 0
   reloading: 0
-  rotationSpeed: 45
+  rotationSpeed: 500

@@ -59,7 +59,7 @@ public class ParticleGuns : MonoBehaviour
 
         for (int i = 0; i < events; i++)
         {
-            Instantiate(spark, colEvents[i].intersection, Quaternion.LookRotation(colEvents[i].normal));
+            Instantiate(spark,transform.position, Quaternion.identity);
         }
 
         if (other.TryGetComponent(out Combat enemy))

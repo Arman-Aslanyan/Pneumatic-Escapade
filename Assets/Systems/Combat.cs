@@ -16,11 +16,11 @@ public class Combat : MonoBehaviour
 
     }
 
-    public virtual void TakeDamage(float gunDamage)
+    public virtual void TakeDamage(float Damage)
     {
         if (i_frames == false)
         {
-            currentHP -= gunDamage;
+            currentHP -= Damage;
         }
 
         if (currentHP <= 0)
