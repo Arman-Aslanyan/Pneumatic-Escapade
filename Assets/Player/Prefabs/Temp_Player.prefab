@@ -178,5 +178,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4638911902d44164ea1f0c7925883a9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flashMaterial: {fileID: 0}
+  flashMaterial: {fileID: 2100000, guid: d697b32b211deb248bd3d839374452e7, type: 2}
   flashDuration: 0
