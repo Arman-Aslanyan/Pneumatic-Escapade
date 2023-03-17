@@ -9,7 +9,8 @@ public class ScreenTransition : MonoBehaviour
     public AnimatorController animControler;
     public float transitionTime = 1f / 0.75f;
 
-    private void Update()
+    //Used for testing the transitions
+    /*private void Update()
     {
         if (Input.GetKeyDown(KeyCode.K))
             Testing();
@@ -17,8 +18,8 @@ public class ScreenTransition : MonoBehaviour
 
     void Testing()
     {
-        PlayTransition("Down");
-    }
+        PlayTransition("Right");
+    }*/
 
     //Plays only the start of the given animation
     public void StartTransition(string direction)
