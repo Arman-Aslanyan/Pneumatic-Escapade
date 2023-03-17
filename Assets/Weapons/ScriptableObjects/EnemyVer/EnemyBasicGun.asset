@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d8ae65cce187c14e91eefcc9ebd5be1, type: 3}
   m_Name: EnemyBasicGun
   m_EditorClassIdentifier: 
-  reloadTime: 1
-  gunDamage: 5
-  currentAmmo: 20
-  ammoMax: 20
-  firingSpeed: 0.6
+  reloadTime: 0
+  gunDamage: 0
+  currentAmmo: 0
+  ammoMax: 0
+  firingSpeed: 0

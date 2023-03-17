@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3d8ae65cce187c14e91eefcc9ebd5be1, type: 3}
-  m_Name: EnemyBasicGun
+  m_Name: EnemyMachineGun
   m_EditorClassIdentifier: 
-  reloadTime: 1
-  gunDamage: 5
-  currentAmmo: 20
-  ammoMax: 20
-  firingSpeed: 0.6
+  reloadTime: 2
+  gunDamage: 2
+  currentAmmo: 35
+  ammoMax: 35
+  firingSpeed: 0.2
