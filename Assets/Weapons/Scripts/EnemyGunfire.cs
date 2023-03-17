@@ -21,6 +21,8 @@ public class EnemyGunfire : MonoBehaviour
         firing = false;
         canFire = true;
         Bullet = GetComponent<ParticleSystem>();
+
+        stats.currentAmmo = stats.ammoMax;
     }
     private void Update()
     {

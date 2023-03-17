@@ -1,4 +1,5 @@
 using UnityEngine;
+using TMPro;
 
 public class Combat : MonoBehaviour
 {
@@ -6,6 +7,7 @@ public class Combat : MonoBehaviour
     public float maxHP;
 
     public bool i_frames;
+    public TMP_Text HP;
 
     
 
@@ -13,7 +15,7 @@ public class Combat : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        HP.text = ("HP: " + currentHP);
     }
 
     public virtual void TakeDamage(float Damage)
@@ -21,6 +23,7 @@ public class Combat : MonoBehaviour
         if (i_frames == false)
         {
             currentHP -= Damage;
+            HP.text = ("HP: " + currentHP);
         }
 
         if (currentHP <= 0)
