@@ -661,6 +661,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transition: {fileID: 483677174}
+  animControler: {fileID: 0}
+  transitionTime: 1.3333334
 --- !u!4 &938826960
 Transform:
   m_ObjectHideFlags: 0
@@ -2030,14 +2032,6 @@ PrefabInstance:
     - target: {fileID: 8411143270876031461, guid: ab8cd703137d69740b525f1a4139f23c, type: 3}
       propertyPath: m_Name
       value: Temp_Enemy
-      objectReference: {fileID: 0}
-    - target: {fileID: 8411143270876031461, guid: ab8cd703137d69740b525f1a4139f23c, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8411143270876031463, guid: ab8cd703137d69740b525f1a4139f23c, type: 3}
-      propertyPath: endReachedDistance
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8411143270876031464, guid: ab8cd703137d69740b525f1a4139f23c, type: 3}
       propertyPath: m_RootOrder
