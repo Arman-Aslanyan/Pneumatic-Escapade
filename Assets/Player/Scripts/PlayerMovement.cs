@@ -12,7 +12,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 movement;
     public bool canMove = true;
     public float dashTime;
-    private ParticleSystem iFrameSmoke;
+    public ParticleSystem iFrameSmoke;
 
     internal Combat combat;
 
@@ -45,13 +45,13 @@ public class PlayerMovement : MonoBehaviour
 
         }
 
-        if(Input.GetKeyDown(KeyCode.LeftShift))
+        if(Input.GetKey(KeyCode.LeftShift))
         {
             combat.SetI_Frames(true);
             float time = 0;
-            time += Time.deltaTime;
-
             iFrameSmoke.Play();
+
+            time += Time.deltaTime;
 
             if (time >= dashTime)
             {

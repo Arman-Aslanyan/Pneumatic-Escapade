@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d8ae65cce187c14e91eefcc9ebd5be1, type: 3}
   m_Name: DualwieldGun
   m_EditorClassIdentifier: 
-  reloadTime: 3
+  reloadTime: 4
   gunDamage: 1
-  currentAmmo: 35
-  ammoMax: 35
-  firingSpeed: 0.1
+  currentAmmo: 0
+  ammoMax: 70
+  firingSpeed: 0.05
