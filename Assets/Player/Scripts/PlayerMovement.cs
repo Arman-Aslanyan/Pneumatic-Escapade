@@ -7,14 +7,20 @@ public class PlayerMovement : MonoBehaviour
     //Internal is public, but its hidden in Unity
     internal Rigidbody2D rb;
     internal Collider2D collider;
+
+    //Movement & dashing
     public float moveSpeed = 5f;
-    //private Animator animator;
     private Vector2 movement;
     public bool canMove = true;
     public float dashTime;
+    public float dashCooldown = 2f;
+    public bool canDash = true;
+    private float time = 0;
+
     public ParticleSystem iFrameSmoke;
 
     internal Combat combat;
+    //private Animator animator;
 
     // Start is called before the first frame update
     void Start()
@@ -42,25 +48,33 @@ public class PlayerMovement : MonoBehaviour
 
                 transform.position = Vector3.MoveTowards(transform.position, targetPos, moveSpeed * Time.deltaTime);
             }
-
         }
 
-        if(Input.GetKey(KeyCode.LeftShift))
+        //Dashing
+        if (canDash && time <= dashTime && Input.GetKey(KeyCode.LeftShift))
         {
             combat.SetI_Frames(true);
-            float time = 0;
             iFrameSmoke.Play();
 
             time += Time.deltaTime;
-
-            if (time >= dashTime)
-            {
-                combat.SetI_Frames(false);
-            }
+        }
+        else
+        {
+            combat.SetI_Frames(false);
+            canDash = false;
+            StartCoroutine(DashCooldown());
         }
 
         //animator.SetFloat("Horizontal", movement.x);
         //animator.SetFloat("Vertical", movement.y);
         //animator.SetFloat("Speed", movement.sqrMagnitude);
+    }
+
+    private IEnumerator DashCooldown()
+    {
+        yield return new WaitForSeconds(dashCooldown);
+
+        time = 0;
+        canDash = true;
     }
 }

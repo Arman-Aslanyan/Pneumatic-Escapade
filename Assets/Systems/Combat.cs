@@ -9,9 +9,6 @@ public class Combat : MonoBehaviour
     public bool i_frames;
     public TMP_Text HP;
 
-    
-
-
     // Start is called before the first frame update
     void Start()
     {
@@ -40,6 +37,5 @@ public class Combat : MonoBehaviour
     public virtual void SetI_Frames(bool enableI_Frames)
     {
         i_frames = enableI_Frames;
-
     }
 }
