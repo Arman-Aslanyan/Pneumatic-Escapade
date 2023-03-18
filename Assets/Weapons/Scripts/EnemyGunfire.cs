@@ -6,6 +6,8 @@ public class EnemyGunfire : MonoBehaviour
 {
     private ParticleSystem Bullet;
 
+    public Transform playerPoint;
+
     public GameObject spark;
     public GameObject flash;
 
@@ -34,6 +36,9 @@ public class EnemyGunfire : MonoBehaviour
         {
             Reloading();
         }
+
+        transform.LookAt(playerPoint);
+
     }
 
     private void OnParticleCollision(GameObject other)
