@@ -25,6 +25,8 @@ public class EnemyGunfire : MonoBehaviour
         canFire = true;
         Bullet = GetComponent<ParticleSystem>();
 
+        playerPoint = GameObject.FindGameObjectWithTag("Player").transform;
+
         currentAmmo = stats.ammoMax;
     }
     private void Update()

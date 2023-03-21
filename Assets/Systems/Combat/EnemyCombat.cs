@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using Pathfinding;
 
 public class EnemyCombat : MonoBehaviour
 {
@@ -16,6 +17,10 @@ public class EnemyCombat : MonoBehaviour
     {
         HP.text = ("HP: " + currentHP);
         gM = FindObjectOfType<GameManager>();
+
+        GetComponent<AIDestinationSetter>().target = GameObject.FindGameObjectWithTag("Player").transform;
+
+        
     }
 
     public virtual void TakeDamage(float Damage)

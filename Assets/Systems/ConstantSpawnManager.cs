@@ -11,9 +11,6 @@ public class ConstantSpawnManager : MonoBehaviour
     public float spawnPosY;
     public float spawnPosY1;
 
-    public float spawnPosZ;
-    public float spawnPosZ1;
-
     [Header("Game Object array")]
     //the array is made using the game objects put inside, and becomes bigger the more parts are put in
     public GameObject[] obj;
@@ -57,7 +54,7 @@ public class ConstantSpawnManager : MonoBehaviour
     void Spawning()
     {
         //spawns the prefab at a randomized location between 2 variables that are assigned manually before running the game
-        Vector3 spawnPos = new Vector3(Random.Range(spawnPosX, spawnPosX1), Random.Range(spawnPosY, spawnPosY1), Random.Range(spawnPosZ, spawnPosZ1));
+        Vector2 spawnPos = new Vector3(Random.Range(spawnPosX, spawnPosX1), Random.Range(spawnPosY, spawnPosY1));
 
         //initializes the Game object array so that its contents are randomly spawned in
         int objectIndex = Random.Range(0, obj.Length);
