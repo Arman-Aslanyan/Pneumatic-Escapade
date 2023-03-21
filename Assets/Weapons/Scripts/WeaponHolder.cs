@@ -39,6 +39,18 @@ public class WeaponHolder : MonoBehaviour
         {
             weaponSelected = 3;
         }
+        if (Input.GetKeyDown(KeyCode.Alpha5) && transform.childCount >= 5)
+        {
+            weaponSelected = 4;
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha6) && transform.childCount >= 6)
+        {
+            weaponSelected = 5;
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha7) && transform.childCount >= 7)
+        {
+            weaponSelected = 6;
+        }
 
         if (previousSelectedWeapon != weaponSelected)
         {

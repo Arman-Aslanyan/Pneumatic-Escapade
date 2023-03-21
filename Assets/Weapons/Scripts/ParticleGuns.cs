@@ -38,6 +38,7 @@ public class ParticleGuns : MonoBehaviour
         Vector3 mousePosWorld = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         Vector3 lookDirection = (mousePosWorld - transform.position).normalized;
         Quaternion goalRotation = Quaternion.LookRotation(lookDirection, Vector3.forward);
+
         transform.rotation = Quaternion.RotateTowards(transform.rotation, goalRotation, rotationSpeed * Time.deltaTime);
 
         if (Input.GetKey(Attack) && canFire == true && currentAmmo > 0 && firing == false)
@@ -65,7 +66,7 @@ public class ParticleGuns : MonoBehaviour
             Instantiate(spark,transform.position, Quaternion.identity);
         }
 
-        if (other.TryGetComponent(out Combat enemy))
+        if (other.TryGetComponent(out EnemyCombat enemy))
         {
             enemy.TakeDamage(stats.gunDamage);
         }
