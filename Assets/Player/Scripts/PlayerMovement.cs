@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 movement;
     public bool canMove = true;
     public float dashTime;
-    public float dashCooldown = 2f;
+    public float dashCooldown;
     public bool canDash = true;
     private float time = 0;
 
@@ -29,7 +29,6 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         collider = GetComponent<Collider2D>();
         //animator = GetComponent<Animator>();
-        iFrameSmoke = GetComponent<ParticleSystem>();
     }
 
     // Update called once per frame
@@ -49,9 +48,9 @@ public class PlayerMovement : MonoBehaviour
                 transform.position = Vector3.MoveTowards(transform.position, targetPos, moveSpeed * Time.deltaTime);
             }
         }
-
+        
         //Dashing
-        if (canDash && time <= dashTime && Input.GetKey(KeyCode.LeftShift))
+        if (canDash && time <= dashTime / 2 && Input.GetKey(KeyCode.LeftShift))
         {
             combat.SetI_Frames(true);
             iFrameSmoke.Play();
@@ -72,7 +71,7 @@ public class PlayerMovement : MonoBehaviour
 
     private IEnumerator DashCooldown()
     {
-        yield return new WaitForSeconds(dashCooldown);
+        yield return new WaitForSeconds(dashCooldown/2);
 
         time = 0;
         canDash = true;

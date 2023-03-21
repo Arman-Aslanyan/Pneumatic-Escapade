@@ -7,7 +7,6 @@ public class WeaponStats : ScriptableObject
 {
     public float reloadTime;
     public float gunDamage;
-    public int currentAmmo;
     public int ammoMax;
     public float firingSpeed;
 }

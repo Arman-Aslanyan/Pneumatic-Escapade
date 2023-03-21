@@ -8,6 +8,7 @@ public class ParticleGuns : MonoBehaviour
     public KeyCode reload;
 
     private ParticleSystem Bullet;
+    public int currentAmmo;
 
     public GameObject spark;
     public WeaponStats stats;
@@ -30,7 +31,7 @@ public class ParticleGuns : MonoBehaviour
         canFire = true;
         Bullet = GetComponent<ParticleSystem>();
 
-        stats.currentAmmo = stats.ammoMax;
+        currentAmmo = stats.ammoMax;
     }
     private void Update()
     {
@@ -39,16 +40,16 @@ public class ParticleGuns : MonoBehaviour
         Quaternion goalRotation = Quaternion.LookRotation(lookDirection, Vector3.forward);
         transform.rotation = Quaternion.RotateTowards(transform.rotation, goalRotation, rotationSpeed * Time.deltaTime);
 
-        if (Input.GetKey(Attack) && canFire == true && stats.currentAmmo > 0 && firing == false)
+        if (Input.GetKey(Attack) && canFire == true && currentAmmo > 0 && firing == false)
         {
             Shooting();
         }
 
-        if (Input.GetKeyDown(reload) && stats.currentAmmo != stats.ammoMax && firing == false && reloading != true)
+        if (Input.GetKeyDown(reload) && currentAmmo != stats.ammoMax && firing == false && reloading != true)
         {
             Reloading();
         }
-        if (stats.currentAmmo == 0 && firing == false && reloading != true)
+        if (currentAmmo == 0 && firing == false && reloading != true)
         {
             Reloading();
         }
@@ -77,7 +78,7 @@ public class ParticleGuns : MonoBehaviour
 
         Bullet.Play();
 
-        stats.currentAmmo--;
+        currentAmmo--;
         Invoke("ResetShoot", stats.firingSpeed);
 
     }
@@ -101,7 +102,7 @@ public class ParticleGuns : MonoBehaviour
     }
     public void ReloadingDone()
     {
-        stats.currentAmmo = stats.ammoMax;
+        currentAmmo = stats.ammoMax;
         reloading = false;
         canFire = true;
     }

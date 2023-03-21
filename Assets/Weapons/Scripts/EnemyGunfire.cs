@@ -10,6 +10,7 @@ public class EnemyGunfire : MonoBehaviour
 
     public GameObject spark;
     public GameObject flash;
+    public int currentAmmo;
 
     public WeaponStats stats;
 
@@ -24,15 +25,15 @@ public class EnemyGunfire : MonoBehaviour
         canFire = true;
         Bullet = GetComponent<ParticleSystem>();
 
-        stats.currentAmmo = stats.ammoMax;
+        currentAmmo = stats.ammoMax;
     }
     private void Update()
     {
-        if (canFire == true && stats.currentAmmo > 0 && firing == false)
+        if (canFire == true && currentAmmo > 0 && firing == false)
         {
             Shooting();
         }
-        if (stats.currentAmmo <= 0 && firing == false && reloading != true)
+        if (currentAmmo <= 0 && firing == false && reloading != true)
         {
             Reloading();
         }
@@ -64,7 +65,7 @@ public class EnemyGunfire : MonoBehaviour
 
         Bullet.Play();
 
-        stats.currentAmmo--;
+        currentAmmo--;
         Invoke("ResetShoot", stats.firingSpeed);
 
     }
@@ -83,7 +84,7 @@ public class EnemyGunfire : MonoBehaviour
     }
     public void ReloadingDone()
     {
-        stats.currentAmmo = stats.ammoMax;
+        currentAmmo = stats.ammoMax;
         reloading = false;
         canFire = true;
     }
