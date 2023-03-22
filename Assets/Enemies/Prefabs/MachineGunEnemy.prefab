@@ -370,8 +370,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5bd13711183c064f893038a35b36768, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentHP: 20
-  maxHP: 20
+  currentHP: 10
+  maxHP: 10
   HP: {fileID: 4544472573843151680}
   gainedCoins: 5
 --- !u!1 &9092213051771452969
@@ -489,6 +489,14 @@ PrefabInstance:
     - target: {fileID: 655723771311394300, guid: e80257fe61045e54895f0c341c1e4ae4, type: 3}
       propertyPath: m_Layer
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5820234125015345676, guid: e80257fe61045e54895f0c341c1e4ae4, type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5820234125015345676, guid: e80257fe61045e54895f0c341c1e4ae4, type: 3}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 5820234125015345676, guid: e80257fe61045e54895f0c341c1e4ae4, type: 3}
       propertyPath: CollisionModule.collidesWith.m_Bits
