@@ -16,6 +16,7 @@ public class PlayerMovement : MonoBehaviour
     public float dashCooldown;
     public bool canDash = true;
     private float time = 0;
+    private Coroutine coroutineInstance; //Prevents the dashCooldown coroutine from running more than once at a time
 
     public ParticleSystem iFrameSmoke;
 
@@ -50,18 +51,22 @@ public class PlayerMovement : MonoBehaviour
         }
         
         //Dashing
-        if (canDash && time <= dashTime / 2 && Input.GetKey(KeyCode.LeftShift))
+        if (canDash)
         {
-            combat.SetI_Frames(true);
-            iFrameSmoke.Play();
-
-            time += Time.deltaTime;
+            if (Input.GetKey(KeyCode.LeftShift) && time <= dashTime)
+            {
+                time += Time.deltaTime;
+                combat.SetI_Frames(true);
+                iFrameSmoke.Play();
+            }
+            else if (time > dashTime)
+                canDash = false;
         }
         else
         {
-            combat.SetI_Frames(false);
-            canDash = false;
-            StartCoroutine(DashCooldown());
+            //Makes the coroutine only run once, preventing a call everytime Update() is ran
+            if (coroutineInstance == null)
+                coroutineInstance = StartCoroutine(DashCooldown());
         }
 
         //animator.SetFloat("Horizontal", movement.x);
@@ -71,9 +76,12 @@ public class PlayerMovement : MonoBehaviour
 
     private IEnumerator DashCooldown()
     {
-        yield return new WaitForSeconds(dashCooldown/2);
+        combat.SetI_Frames(false);
+
+        yield return new WaitForSeconds(dashCooldown);
 
         time = 0;
         canDash = true;
+        coroutineInstance = null;
     }
 }
