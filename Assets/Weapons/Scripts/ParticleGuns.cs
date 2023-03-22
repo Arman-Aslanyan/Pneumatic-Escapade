@@ -19,6 +19,7 @@ public class ParticleGuns : MonoBehaviour
     public bool firing;
     public bool reloading;
 
+    public TMP_Text ammoRemaining;
 
 
     List<ParticleCollisionEvent> colEvents = new List<ParticleCollisionEvent>();
@@ -32,14 +33,24 @@ public class ParticleGuns : MonoBehaviour
         Bullet = GetComponent<ParticleSystem>();
 
         currentAmmo = stats.ammoMax;
+        ammoRemaining.text = ("Ammo: " + currentAmmo);
     }
     private void Update()
     {
         Vector3 mousePosWorld = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        Vector3 lookDirection = (mousePosWorld - transform.position).normalized;
-        Quaternion goalRotation = Quaternion.LookRotation(lookDirection, Vector3.forward);
+        Vector2 lookDirection =  (Vector2)(mousePosWorld - transform.position).normalized;
+        Quaternion goalRotation = Quaternion.LookRotation(lookDirection, Vector2.up);
 
         transform.rotation = Quaternion.RotateTowards(transform.rotation, goalRotation, rotationSpeed * Time.deltaTime);
+
+        if(currentAmmo > 0)
+        {
+            ammoRemaining.text = ("Ammo: " + currentAmmo);
+        }
+        if(currentAmmo == 0)
+        {
+            ammoRemaining.text = ("Reloading");
+        }
 
         if (Input.GetKey(Attack) && canFire == true && currentAmmo > 0 && firing == false)
         {
