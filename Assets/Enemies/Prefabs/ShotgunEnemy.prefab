@@ -370,8 +370,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5bd13711183c064f893038a35b36768, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentHP: 20
-  maxHP: 20
+  currentHP: 10
+  maxHP: 10
   HP: {fileID: 4544472573843151680}
   gainedCoins: 5
 --- !u!1 &9092213051771452969
@@ -539,8 +539,24 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7573740631257060983, guid: 71fe7c3b5955c1a4f8d79dc972338169, type: 3}
+      propertyPath: ShapeModule.m_Rotation.z
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 7573740631257060983, guid: 71fe7c3b5955c1a4f8d79dc972338169, type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7573740631257060983, guid: 71fe7c3b5955c1a4f8d79dc972338169, type: 3}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 7573740631257060983, guid: 71fe7c3b5955c1a4f8d79dc972338169, type: 3}
       propertyPath: CollisionModule.collidesWith.m_Bits
       value: 95
+      objectReference: {fileID: 0}
+    - target: {fileID: 7573740631257060983, guid: 71fe7c3b5955c1a4f8d79dc972338169, type: 3}
+      propertyPath: EmissionModule.m_Bursts.Array.data[0].countCurve.scalar
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 669821094037862063, guid: 71fe7c3b5955c1a4f8d79dc972338169, type: 3}
