@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d8ae65cce187c14e91eefcc9ebd5be1, type: 3}
   m_Name: BeamGun
   m_EditorClassIdentifier: 
-  reloadTime: 20
+  reloadTime: 5
   gunDamage: 0.3
-  ammoMax: 100
-  firingSpeed: 0.1
+  ammoMax: 150
+  firingSpeed: 0.01
