@@ -845,7 +845,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: CF_End
+    m_ConditionEvent: CrossFadeEnd
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -3607807630988983213}
@@ -945,7 +945,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: CF_Start
+    m_ConditionEvent: CrossFadeStart
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -6496930182996571744}
@@ -1149,7 +1149,7 @@ AnimatorStateMachine:
     m_Position: {x: 780, y: -460, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -6496930182996571744}
-    m_Position: {x: 910, y: -220, z: 0}
+    m_Position: {x: 920, y: -220, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -1250,13 +1250,13 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
-  - m_Name: CF_Start
+  - m_Name: CrossFadeStart
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
-  - m_Name: CF_End
+  - m_Name: CrossFadeEnd
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0

@@ -18,6 +18,10 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         coin.text = ("Coins: " + coins);
+
+        //QoL dev debugging
+        if (Input.GetKeyDown(KeyCode.R))
+            LevelLoader.Instance.LoadLevel("Menu");
     }
 
     public void GetCoins(int gainedCoins)

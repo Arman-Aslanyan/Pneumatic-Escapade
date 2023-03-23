@@ -6,20 +6,7 @@ using UnityEditor.Animations;
 public class ScreenTransition : MonoBehaviour
 {
     public Animator transition;
-    public AnimatorController animControler;
     public float transitionTime = 1f / 0.75f;
-
-    //Used for testing the transitions
-    /*private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.K))
-            Testing();
-    }
-
-    void Testing()
-    {
-        PlayTransition("Right");
-    }*/
 
     //Plays only the start of the given animation
     public void StartTransition(string direction)
