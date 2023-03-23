@@ -560,7 +560,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8965798197671065892, guid: caaa987d53cfa6c4b80b05bd3b7cc21b, type: 3}
       propertyPath: CollisionModule.collidesWith.m_Bits
-      value: 311
+      value: 95
       objectReference: {fileID: 0}
     - target: {fileID: 8965798197671065892, guid: caaa987d53cfa6c4b80b05bd3b7cc21b, type: 3}
       propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.size
