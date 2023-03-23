@@ -7,9 +7,6 @@ public class EnemyGunfire : MonoBehaviour
     private ParticleSystem Bullet;
 
     public Transform playerPoint;
-
-    public GameObject spark;
-    public GameObject flash;
     public int currentAmmo;
 
     public WeaponStats stats;
@@ -49,11 +46,6 @@ public class EnemyGunfire : MonoBehaviour
 
         int events = Bullet.GetCollisionEvents(other, colEvents);
 
-        for (int i = 0; i < events; i++)
-        {
-            Instantiate(spark, colEvents[i].intersection, Quaternion.LookRotation(colEvents[i].normal));
-        }
-
         if (other.TryGetComponent(out Combat player))
         {
             player.TakeDamage(stats.gunDamage);
@@ -62,7 +54,6 @@ public class EnemyGunfire : MonoBehaviour
     }
     public void Shooting()
     {
-        Instantiate(flash, transform.position, transform.rotation);
         firing = true;
 
         Bullet.Play();

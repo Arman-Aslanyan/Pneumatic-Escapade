@@ -5,15 +5,14 @@ using TMPro;
 public class ParticleGuns : MonoBehaviour
 {
     public KeyCode Attack;
+    public KeyCode Attack2;
     public KeyCode reload;
 
     private ParticleSystem Bullet;
     public int currentAmmo;
 
-    public GameObject spark;
     public WeaponStats stats;
 
-    public GameObject flash;
 
     public bool canFire;
     public bool firing;
@@ -56,6 +55,10 @@ public class ParticleGuns : MonoBehaviour
         {
             Shooting();
         }
+        if (Input.GetKey(Attack2) && canFire == true && currentAmmo > 0 && firing == false)
+        {
+            Shooting();
+        }
 
         if (Input.GetKeyDown(reload) && currentAmmo != stats.ammoMax && firing == false && reloading != true)
         {
@@ -72,11 +75,6 @@ public class ParticleGuns : MonoBehaviour
 
         int events = Bullet.GetCollisionEvents(other, colEvents);
 
-        for (int i = 0; i < events; i++)
-        {
-            Instantiate(spark,transform.position, Quaternion.identity);
-        }
-
         if (other.TryGetComponent(out EnemyCombat enemy))
         {
             enemy.TakeDamage(stats.gunDamage);
@@ -85,7 +83,6 @@ public class ParticleGuns : MonoBehaviour
 
     public void Shooting()
     {
-        Instantiate(flash, transform.position, transform.rotation);
         firing = true;
 
         Bullet.Play();
@@ -99,11 +96,6 @@ public class ParticleGuns : MonoBehaviour
     {
         firing = false;
         canFire = true;
-    }
-
-    public void ShootingBlanks()
-    {
-        return;
     }
 
     public void Reloading()
