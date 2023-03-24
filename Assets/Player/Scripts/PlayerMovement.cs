@@ -23,6 +23,19 @@ public class PlayerMovement : MonoBehaviour
     internal Combat combat;
     //private Animator animator;
 
+    public static PlayerMovement Instance;
+
+    void Awake()
+    {
+        if (Instance != null)
+        {
+            Destroy(gameObject);
+        }
+
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
+    }
+
     // Start is called before the first frame update
     void Start()
     {
