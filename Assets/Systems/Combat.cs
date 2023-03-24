@@ -9,16 +9,23 @@ public class Combat : MonoBehaviour
     public bool i_frames;
     public TMP_Text HP;
 
+
+    public float shakeTime;
+    public float shakeIntensity;
     // Start is called before the first frame update
     void Start()
     {
         HP.text = ("HP: " + currentHP);
     }
 
+    public void Update()
+    {
+    }
     public virtual void TakeDamage(float Damage)
     {
         if (i_frames == false)
         {
+            CinemachineShake.Instance.ShakeCamera(shakeIntensity, shakeTime);
             currentHP -= Damage;
             HP.text = ("HP: " + currentHP);
         }
@@ -38,4 +45,5 @@ public class Combat : MonoBehaviour
     {
         i_frames = enableI_Frames;
     }
+
 }

@@ -12,6 +12,8 @@ public class ParticleGuns : MonoBehaviour
     public int currentAmmo;
 
     public WeaponStats stats;
+    public float shakeTime;
+    public float shakeIntensity;
 
 
     public bool canFire;
@@ -86,6 +88,7 @@ public class ParticleGuns : MonoBehaviour
         firing = true;
 
         Bullet.Play();
+        CinemachineShake.Instance.ShakeCamera(shakeIntensity, shakeTime);
 
         currentAmmo--;
         Invoke("ResetShoot", stats.firingSpeed);

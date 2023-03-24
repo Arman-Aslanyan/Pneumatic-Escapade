@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4858147709371736716}
   - component: {fileID: 2094625532390204481}
   - component: {fileID: 1563757312581502017}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: HP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -147,7 +147,7 @@ GameObject:
   - component: {fileID: 7682836847036992438}
   - component: {fileID: 7797089425094334026}
   - component: {fileID: 316420205840781829}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: HP Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}

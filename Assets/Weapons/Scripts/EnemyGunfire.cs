@@ -15,6 +15,9 @@ public class EnemyGunfire : MonoBehaviour
     public bool firing;
     public bool reloading;
 
+    public float shakeTime;
+    public float shakeIntensity;
+
     List<ParticleCollisionEvent> colEvents = new List<ParticleCollisionEvent>();
     private void Start()
     {
@@ -57,6 +60,7 @@ public class EnemyGunfire : MonoBehaviour
         firing = true;
 
         Bullet.Play();
+        CinemachineShake.Instance.ShakeCamera(shakeIntensity, shakeTime);
 
         currentAmmo--;
         Invoke("ResetShoot", stats.firingSpeed);

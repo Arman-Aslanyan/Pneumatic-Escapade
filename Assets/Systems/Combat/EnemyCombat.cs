@@ -12,21 +12,22 @@ public class EnemyCombat : MonoBehaviour
     private GameManager gM;
     public int gainedCoins;
 
+
+
     // Start is called before the first frame update
     void Start()
     {
-        HP.text = ("HP: " + currentHP);
+        HP.text = (" ");
         gM = FindObjectOfType<GameManager>();
 
         GetComponent<AIDestinationSetter>().target = GameObject.FindGameObjectWithTag("Player").transform;
-
-        
     }
 
     public virtual void TakeDamage(float Damage)
     {
         currentHP -= Damage;
         HP.text = ("HP: " + currentHP);
+
 
         if (currentHP <= 0)
         {
