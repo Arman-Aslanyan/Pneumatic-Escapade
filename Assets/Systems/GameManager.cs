@@ -22,6 +22,7 @@ public class GameManager : MonoBehaviour
         //QoL dev debugging
         if (Input.GetKeyDown(KeyCode.R))
             LevelLoader.Instance.LoadLevel("Menu");
+
     }
 
     public void GetCoins(int gainedCoins)

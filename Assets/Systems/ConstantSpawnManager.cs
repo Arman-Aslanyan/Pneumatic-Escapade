@@ -7,10 +7,11 @@ public class ConstantSpawnManager : MonoBehaviour
     // floats used to coordinate the spawn position for the prefabs in game.
     // Set the first and second variables to the same number in order to disable the randomness in the spawns
     public float spawnPosX;
-    public float spawnPosX1;
+     public float spawnPosX1;
 
     public float spawnPosY;
     public float spawnPosY1;
+    public Transform spawnPosition;
 
     [Header("Game Object array")]
     //the array is made using the game objects put inside, and becomes bigger the more parts are put in
@@ -55,7 +56,7 @@ public class ConstantSpawnManager : MonoBehaviour
     void Spawning()
     {
         //spawns the prefab at a randomized location between 2 variables that are assigned manually before running the game
-        Vector2 spawnPos = new Vector3(Random.Range(spawnPosX, spawnPosX1), Random.Range(spawnPosY, spawnPosY1));
+        Vector2 spawnPos = new Vector2(Random.Range(spawnPosX, spawnPosX1), Random.Range(spawnPosY, spawnPosY1));
 
         //initializes the Game object array so that its contents are randomly spawned in
         int objectIndex = Random.Range(0, obj.Length);

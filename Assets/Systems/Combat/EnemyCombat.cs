@@ -12,6 +12,8 @@ public class EnemyCombat : MonoBehaviour
     private GameManager gM;
     public int gainedCoins;
 
+    public SpawnEnemies sE;
+
 
 
     // Start is called before the first frame update
@@ -19,6 +21,7 @@ public class EnemyCombat : MonoBehaviour
     {
         HP.text = (" ");
         gM = FindObjectOfType<GameManager>();
+        sE = FindObjectOfType<SpawnEnemies>();
 
         GetComponent<AIDestinationSetter>().target = GameObject.FindGameObjectWithTag("Player").transform;
     }
@@ -40,5 +43,7 @@ public class EnemyCombat : MonoBehaviour
         Debug.Log("dead");
         gM.GetCoins(gainedCoins);
         Destroy(gameObject);
+        sE.enemyCount--;
+        sE.encountersSpawned--;
     }
 }
