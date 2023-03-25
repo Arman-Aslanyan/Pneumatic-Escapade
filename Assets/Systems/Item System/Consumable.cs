@@ -14,10 +14,20 @@ public class Consumable : Item
         }
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.G))
+        {
+            print("Triggering consumable!");
+            TriggerEffect();
+        }
+    }
+
     //When called, triggers the consumables effect
     public virtual void TriggerEffect()
     {
         print("Consumable effect triggered!");
         stacks--;
+        inventory._items.Remove(this);
     }
 }

@@ -11,28 +11,31 @@ public class Item : MonoBehaviour
     //Reference variables for the Items to use
     internal static WeaponHolder weaponHolder;
     internal static ParticleGuns[] Weapons;
-    internal static Combat PlayerCombat;
-    internal static Inventory inventory;
+    public static Combat PlayerCombat;
+    public static Inventory inventory;
 
     private void OnEnable()
     {
-        if (weaponHolder == null)
+        PlayerCombat = FindObjectOfType<PlayerMovement>().combat;
+        inventory = FindObjectOfType<Inventory>();
+        /*if (weaponHolder == null)
         {
             weaponHolder = FindObjectOfType<WeaponHolder>();
             Weapons = weaponHolder.GetComponentsInChildren<ParticleGuns>();
             PlayerCombat = FindObjectOfType<PlayerMovement>().combat;
             inventory = PlayerCombat.GetComponent<Inventory>();
-        }
+        }*/
+
     }
 
     //The item's effect (if not a consumable) will go off here
     public virtual void OnPickUp()
     {
         print("Item has been picked up");
-        for (int i = 0; i < Weapons.Length; i++)
+        /*for (int i = 0; i < Weapons.Length; i++)
         {
             print(Weapons[i].name);
-        }
+        }*/
         if (stacks < maxStacks)
         {
             stacks++;
