@@ -100,7 +100,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stacks: 0
   maxStacks: 3
-  healing: 20
+  heal_LowerLim: 15
+  heal_UpperLim: 30
 --- !u!70 &-154414144797833755
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -111,7 +112,7 @@ CapsuleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
