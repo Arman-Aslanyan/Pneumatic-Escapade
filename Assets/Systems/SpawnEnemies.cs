@@ -18,13 +18,27 @@ public class SpawnEnemies : MonoBehaviour
 
     public void Update()
     {
+
+        if(enemyCount < 0)
+        {
+            enemyCount = 0;
+        }
         if (enemyCount > 0)
         {
             encounterNum.text = ("Required Defeats: " + enemyCount);
         }
+        else if (enemyCount == 0)
+        {
+            encounterNum.text = ("");
+        }
 
 
         currentEnemyCount.text = ("Enemies Alive: " + encountersSpawned);
+        
+        if(encountersSpawned == 0)
+        {
+            currentEnemyCount.text = ("");
+        }    
 
         if (Input.GetKeyDown(KeyCode.J))
         {
@@ -46,7 +60,7 @@ public class SpawnEnemies : MonoBehaviour
 
     IEnumerator SpawnAnEnemy()
     {
-        if (enemyCount > 0 && encountersSpawned <= encounterLimit)
+        if (enemyCount > 0 && encountersSpawned <= encounterLimit || encountersSpawned < 2)
         {
             encountersSpawned++;
             Vector2 spawnPos = GameObject.Find("Player").transform.position;

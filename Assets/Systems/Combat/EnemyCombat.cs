@@ -13,6 +13,7 @@ public class EnemyCombat : MonoBehaviour
     public int gainedCoins;
 
     public SpawnEnemies sE;
+    public GameObject spawnEffect;
 
 
 
@@ -24,6 +25,7 @@ public class EnemyCombat : MonoBehaviour
         sE = FindObjectOfType<SpawnEnemies>();
 
         GetComponent<AIDestinationSetter>().target = GameObject.FindGameObjectWithTag("Player").transform;
+        Instantiate(spawnEffect, transform.position, transform.rotation);
     }
 
     public virtual void TakeDamage(float Damage)

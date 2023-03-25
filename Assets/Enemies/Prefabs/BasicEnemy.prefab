@@ -374,6 +374,8 @@ MonoBehaviour:
   maxHP: 10
   HP: {fileID: 4544472573843151680}
   gainedCoins: 5
+  sE: {fileID: 0}
+  spawnEffect: {fileID: 7815057208917191966, guid: 771e328d74d83d14e913f905f69abf0e, type: 3}
 --- !u!1 &9092213051771452969
 GameObject:
   m_ObjectHideFlags: 0
@@ -576,6 +578,8 @@ MonoBehaviour:
   canFire: 0
   firing: 0
   reloading: 0
+  shakeTime: 0
+  shakeIntensity: 0
 --- !u!4 &9107642801051735781 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9107642802964786568, guid: 1426781c158992b44b4d5c2eb28836fe, type: 3}

@@ -29407,6 +29407,8 @@ MonoBehaviour:
   maxHP: 500
   HP: {fileID: 2742719503296636422}
   gainedCoins: 500
+  sE: {fileID: 0}
+  spawnEffect: {fileID: 7815057208917191966, guid: 771e328d74d83d14e913f905f69abf0e, type: 3}
 --- !u!1 &9118674359083706310
 GameObject:
   m_ObjectHideFlags: 0
@@ -29633,6 +29635,8 @@ MonoBehaviour:
   canFire: 0
   firing: 0
   reloading: 0
+  shakeTime: 0
+  shakeIntensity: 0
 --- !u!4 &6300143842035474015 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6726407965605630302, guid: e80257fe61045e54895f0c341c1e4ae4, type: 3}
@@ -29815,6 +29819,8 @@ MonoBehaviour:
   canFire: 0
   firing: 0
   reloading: 0
+  shakeTime: 0
+  shakeIntensity: 0
 --- !u!4 &5570631549658002792 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9107642802964786568, guid: 1426781c158992b44b4d5c2eb28836fe, type: 3}
@@ -30213,6 +30219,8 @@ MonoBehaviour:
   canFire: 0
   firing: 0
   reloading: 0
+  shakeTime: 0
+  shakeIntensity: 0
 --- !u!4 &4779380930191893926 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8210142954856645238, guid: caaa987d53cfa6c4b80b05bd3b7cc21b, type: 3}
@@ -30400,6 +30408,8 @@ MonoBehaviour:
   canFire: 0
   firing: 0
   reloading: 0
+  shakeTime: 0
+  shakeIntensity: 0
 --- !u!1001 &3720971814839001259
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30577,6 +30587,8 @@ MonoBehaviour:
   canFire: 0
   firing: 0
   reloading: 0
+  shakeTime: 0
+  shakeIntensity: 0
 --- !u!4 &5604541691074956579 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9107642802964786568, guid: 1426781c158992b44b4d5c2eb28836fe, type: 3}
@@ -30767,6 +30779,8 @@ MonoBehaviour:
   canFire: 0
   firing: 0
   reloading: 0
+  shakeTime: 0
+  shakeIntensity: 0
 --- !u!4 &6279276465471987295 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7244027406110453029, guid: 71fe7c3b5955c1a4f8d79dc972338169, type: 3}
