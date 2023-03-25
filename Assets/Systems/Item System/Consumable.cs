@@ -7,11 +7,7 @@ public class Consumable : Item
     public override void OnPickUp()
     {
         print("Consumable picked up!");
-        if (stacks < maxStacks)
-        {
-            stacks++;
-            inventory._items.Add(this);
-        }
+        base.OnPickUp();
     }
 
     private void Update()
@@ -19,15 +15,16 @@ public class Consumable : Item
         if (Input.GetKeyDown(KeyCode.G))
         {
             print("Triggering consumable!");
-            TriggerEffect();
+            OnTriggerEffect();
         }
     }
 
     //When called, triggers the consumables effect
-    public virtual void TriggerEffect()
+    public virtual void OnTriggerEffect()
     {
         print("Consumable effect triggered!");
-        stacks--;
-        inventory._items.Remove(this);
+        --stacks;
+        if (stacks == 0)
+            inventory.RemoveAllOfType<HealthPotion>();
     }
 }

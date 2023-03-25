@@ -9,10 +9,10 @@ public class Item : MonoBehaviour
     public int maxStacks = 1;
 
     //Reference variables for the Items to use
-    internal static WeaponHolder weaponHolder;
-    internal static ParticleGuns[] Weapons;
-    public static Combat PlayerCombat;
-    public static Inventory inventory;
+    [HideInInspector] public static WeaponHolder weaponHolder;
+    [HideInInspector] public static ParticleGuns[] Weapons;
+    [HideInInspector] public static Combat PlayerCombat;
+    [HideInInspector] public static Inventory inventory;
 
     private void OnEnable()
     {
@@ -31,15 +31,18 @@ public class Item : MonoBehaviour
     //The item's effect (if not a consumable) will go off here
     public virtual void OnPickUp()
     {
-        print("Item has been picked up");
+        //print("Item has been picked up");
         /*for (int i = 0; i < Weapons.Length; i++)
         {
             print(Weapons[i].name);
         }*/
         if (stacks < maxStacks)
         {
-            stacks++;
-            inventory._items.Add(this);
+            if (stacks == 0)
+                inventory._items.Add(this);
+            ++stacks;
+            //Disable the rendering and collider. Then after usage, destroy the item (if consumable)
+            //Destroy(gameObject, 0);
         }
     }
 }

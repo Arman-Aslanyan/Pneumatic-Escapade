@@ -10,22 +10,14 @@ public class HealthPotion : Consumable
     public override void OnPickUp()
     {
         print("Health Potion has been picked up!");
-        if (stacks < maxStacks)
-        {
-            if (stacks == 0)
-                inventory._items.Add(this);
-            ++stacks;
-            DestroyImmediate(gameObject);
-        }
+        base.OnPickUp();
     }
 
-    public override void TriggerEffect()
+    public override void OnTriggerEffect()
     {
         int healing = Random.Range(heal_LowerLim, heal_UpperLim + 1);
         //PlayerCombat.currentHP += healing;
         print("Healed " + healing + " hp!");
-        --stacks;
-        if (stacks == 0)
-            inventory.RemoveAllOfType<HealthPotion>();
+        base.OnTriggerEffect();
     }
 }
