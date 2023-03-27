@@ -9,40 +9,35 @@ public class Item : MonoBehaviour
     public int maxStacks = 1;
 
     //Reference variables for the Items to use
-    [HideInInspector] public static WeaponHolder weaponHolder;
-    [HideInInspector] public static ParticleGuns[] Weapons;
-    [HideInInspector] public static Combat PlayerCombat;
-    [HideInInspector] public static Inventory inventory;
+    public WeaponHolder weaponHolder;
+    public ParticleGuns[] Weapons;
+    public Combat PlayerCombat;
+    public Inventory inventory;
 
-    private void OnEnable()
+    private void Start()
     {
         PlayerCombat = FindObjectOfType<PlayerMovement>().combat;
         inventory = FindObjectOfType<Inventory>();
-        /*if (weaponHolder == null)
+        if (weaponHolder == null)
         {
             weaponHolder = FindObjectOfType<WeaponHolder>();
             Weapons = weaponHolder.GetComponentsInChildren<ParticleGuns>();
-            PlayerCombat = FindObjectOfType<PlayerMovement>().combat;
-            inventory = PlayerCombat.GetComponent<Inventory>();
-        }*/
-
+            PlayerCombat = GameObject.FindGameObjectWithTag("Player").GetComponent<Combat>();
+            inventory = FindObjectOfType<Inventory>();
+        }
     }
 
     //The item's effect (if not a consumable) will go off here
     public virtual void OnPickUp()
     {
         //print("Item has been picked up");
-        /*for (int i = 0; i < Weapons.Length; i++)
-        {
-            print(Weapons[i].name);
-        }*/
         if (stacks < maxStacks)
         {
             if (stacks == 0)
                 inventory._items.Add(this);
             ++stacks;
-            //Disable the rendering and collider. Then after usage, destroy the item (if consumable)
-            //Destroy(gameObject, 0);
+            GetComponent<SpriteRenderer>().forceRenderingOff = true;
+            GetComponent<Collider2D>().enabled = false;
         }
     }
 }
