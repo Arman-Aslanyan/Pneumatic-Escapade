@@ -9,5 +9,7 @@ public class ArmorPiercingRounds : Item
         print("Armor-Piercing Rounds has been picked up!");
         base.OnPickUp();
         //Make the player deal more damage here
+        foreach (ParticleGuns weapon in Weapons)
+            weapon.stats.gunDamage *= 1.15f;
     }
 }
