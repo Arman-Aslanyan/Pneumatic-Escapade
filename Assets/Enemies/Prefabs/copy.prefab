@@ -29477,6 +29477,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 1725372357193558489, guid: e80257fe61045e54895f0c341c1e4ae4, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5820234125015345676, guid: e80257fe61045e54895f0c341c1e4ae4, type: 3}
       propertyPath: InitialModule.startSize.scalar
       value: 1
@@ -29661,6 +29665,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3804444044233217295, guid: 1426781c158992b44b4d5c2eb28836fe, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8356561799129503450, guid: 1426781c158992b44b4d5c2eb28836fe, type: 3}
       propertyPath: ShapeModule.m_Rotation.x
       value: 0
@@ -29844,6 +29852,10 @@ PrefabInstance:
     - target: {fileID: 2715899991199293140, guid: caaa987d53cfa6c4b80b05bd3b7cc21b, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4276318379438832369, guid: caaa987d53cfa6c4b80b05bd3b7cc21b, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8210142954856645238, guid: caaa987d53cfa6c4b80b05bd3b7cc21b, type: 3}
       propertyPath: m_RootOrder
@@ -30365,6 +30377,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 5589485431356162051, guid: b211cba3b1773f44bb6f8c41e993aafc, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6014996202397099046, guid: b211cba3b1773f44bb6f8c41e993aafc, type: 3}
       propertyPath: m_Name
       value: RPG
@@ -30428,6 +30444,10 @@ PrefabInstance:
     - target: {fileID: 3036624600891420970, guid: 1426781c158992b44b4d5c2eb28836fe, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3804444044233217295, guid: 1426781c158992b44b4d5c2eb28836fe, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8356561799129503450, guid: 1426781c158992b44b4d5c2eb28836fe, type: 3}
       propertyPath: ShapeModule.m_Rotation.x
@@ -30601,6 +30621,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2267964746722740183}
     m_Modifications:
+    - target: {fileID: 3327937920063280546, guid: 71fe7c3b5955c1a4f8d79dc972338169, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3514898603513213319, guid: 71fe7c3b5955c1a4f8d79dc972338169, type: 3}
       propertyPath: m_Name
       value: Shotgun

@@ -484,6 +484,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8411143270876031464}
     m_Modifications:
+    - target: {fileID: 3327937920063280546, guid: 71fe7c3b5955c1a4f8d79dc972338169, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3514898603513213319, guid: 71fe7c3b5955c1a4f8d79dc972338169, type: 3}
       propertyPath: m_Name
       value: Shotgun

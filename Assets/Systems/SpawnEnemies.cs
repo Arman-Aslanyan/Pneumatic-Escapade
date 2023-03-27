@@ -73,14 +73,14 @@ public class SpawnEnemies : MonoBehaviour
         }
     }
 
-    public void EncounterUp()
+    public void EncounterUp(int encounterUp)
     {
-        enemyCount++;
+        enemyCount = encounterUp;
     }
 
-    public void EnemyLimitUp()
+    public void EnemyLimitUp(int limitUp)
     {
-        encounterLimit++;
+        encounterLimit = limitUp;
     }
 
     public void RestartEnemyEncounter()
