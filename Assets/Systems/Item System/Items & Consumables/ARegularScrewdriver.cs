@@ -5,7 +5,8 @@ using UnityEngine;
 public class ARegularScrewdriver : Item
 {
     private bool InEffect = false;
-    private int effectStacks = 0;
+    private int effectStacks = 0; //Yes I know that this variable actually has no effect on the script.
+    private Coroutine coroutine;
     
     // Update is called once per frame
     void Update()
@@ -16,7 +17,9 @@ public class ARegularScrewdriver : Item
             {
                 weapon.stats.gunDamage += 0.5f;
             }
-            StartCoroutine(TimeUntilNextStack());
+            ++effectStacks;
+            InEffect = false;
+            coroutine = StartCoroutine(TimeUntilNextStack());
         }
     }
 
@@ -31,13 +34,20 @@ public class ARegularScrewdriver : Item
 
     private IEnumerator TimeUntilNextStack()
     {
-        InEffect = false;
         yield return new WaitForSeconds(10);
+        InEffect = true;
     }
 
     public void RemoveAllStacks()
     {
+        StopCoroutine(coroutine);
+        for (int i = 0; i < effectStacks; i++)
+        {
+            foreach (ParticleGuns weapon in Weapons)
+            {
+                weapon.stats.gunDamage -= 0.5f;
+            }
+        }
         effectStacks = 0;
-
     }
 }

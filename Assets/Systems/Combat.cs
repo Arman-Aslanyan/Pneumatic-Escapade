@@ -18,22 +18,24 @@ public class Combat : MonoBehaviour
         HP.text = ("HP: " + currentHP);
     }
 
-    public void Update()
-    {
-    }
     public virtual void TakeDamage(float Damage)
     {
         if (i_frames == false)
         {
             CinemachineShake.Instance.ShakeCamera(shakeIntensity, shakeTime);
             currentHP -= Damage;
-            HP.text = ("HP: " + currentHP);
         }
 
         if (currentHP <= 0)
         {
+            currentHP = 0;
             Death();
         }
+
+        HP.text = ("HP: " + currentHP);
+
+        //Item functionality
+        FindObjectOfType<ARegularScrewdriver>().RemoveAllStacks();
     }
 
     public virtual void Death()
