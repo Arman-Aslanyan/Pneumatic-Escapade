@@ -16,6 +16,8 @@ public class RollItem : MonoBehaviour
     [Range(0, 1)] public float legendary_Roll = 0.125f;
     [Range(0, 1)] public float mythical_Roll = 0.075f;
 
+    private Vector3 playerPos;
+
     private void Start()
     {
         for (int i = 0; i < items.Count; i++)
@@ -30,13 +32,27 @@ public class RollItem : MonoBehaviour
                 Mythical_Items.Add(items[i].GetComponent<Item>());
             else Debug.LogError("ERROR WHEN FINDING ITEMS OF RARITY, INDEX = " + i);
         }
+
+        playerPos = FindObjectOfType<PlayerMovement>().transform.position;
+    }
+
+    private void Update()
+    {
+        //Follow the player
+        transform.position = playerPos;
+
+        //Debug purposes
+        if (Input.GetKeyDown(KeyCode.J))
+            Gamble();
     }
 
     public void Gamble()
     {
+        print("AAAAAAAAAA");
+        Common_Items[0].GetComponent<Collider2D>().enabled = true;
         float rand = Random.Range(0, 1);
 
-        if (rand >= 1- mythical_Roll)
+        if (rand >= 1 - mythical_Roll)
         {
             int randInt = Random.Range(0, Mythical_Items.Count);
             Mythical_Items[randInt].OnPickUp();
@@ -54,7 +70,7 @@ public class RollItem : MonoBehaviour
         else if (rand >= 1 - common_Roll)
         {
             int randInt = Random.Range(0, Common_Items.Count);
-            Common_Items[randInt].OnPickUp();
+            Common_Items[randInt].GetComponent<Collider2D>().enabled = true;
         }
     }
 }

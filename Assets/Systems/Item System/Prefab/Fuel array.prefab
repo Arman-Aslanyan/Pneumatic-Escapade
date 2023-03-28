@@ -74,7 +74,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: 0
   m_Sprite: {fileID: -9095717837082945937, guid: f185d72c1f8ac854f879cfaf80d83831, type: 3}
   m_Color: {r: 0.3018868, g: 0.17813648, b: 0, a: 1}
   m_FlipX: 0
@@ -93,7 +93,7 @@ CapsuleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6043798126212125360}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -114,3 +114,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5041ac77461fc9347a16f4ed5d0b2e38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stacks: 0
+  maxStacks: 1
+  weaponHolder: {fileID: 0}
+  Weapons: []
+  PlayerCombat: {fileID: 0}
+  playerMovement: {fileID: 0}
+  inventory: {fileID: 0}
+  rarity: 0
