@@ -742,7 +742,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   encounterNum: 20
-  encounterLim: 5
+  encounterLim: 25
   spawnRadius: 7
   spawnTime: 2
   spEn: {fileID: 0}

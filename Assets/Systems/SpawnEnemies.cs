@@ -39,6 +39,7 @@ public class SpawnEnemies : MonoBehaviour
         {
             currentEnemyCount.text = ("");
         }    
+
     }
 
     IEnumerator SpawnAnEnemy()
