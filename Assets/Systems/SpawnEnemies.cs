@@ -14,7 +14,13 @@ public class SpawnEnemies : MonoBehaviour
     public TMP_Text currentEnemyCount;
 
     public GameObject[] enemies;
+    public GameObject Doors;
     // Start is called before the first frame update
+
+    public void Start()
+    {
+        Doors.SetActive(false);
+    }
 
     public void Update()
     {
@@ -26,10 +32,12 @@ public class SpawnEnemies : MonoBehaviour
         if (enemyCount > 0)
         {
             encounterNum.text = ("Required Defeats: " + enemyCount);
+            Doors.SetActive(true);
         }
         else if (enemyCount == 0)
         {
             encounterNum.text = ("");
+            Doors.SetActive(false);
         }
 
 
