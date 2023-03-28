@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2326321159454015973
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6937834537005552277}
+  - component: {fileID: 3931544229633289720}
+  m_Layer: 0
+  m_Name: Item Rolling Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6937834537005552277
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2326321159454015973}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3931544229633289720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2326321159454015973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d5b362e9e55b124e85b29b9bae5a428, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  items:
+  - {fileID: 1330493932377575964, guid: a3ddb263a7b403347841d380c3087fb5, type: 3}
+  - {fileID: 8241022779751165178, guid: 10f44cd8a1015cb49885ebd8089359e7, type: 3}
+  - {fileID: 5199566063751749750, guid: 0e4994592add39e4285c17ea88da87d9, type: 3}
+  - {fileID: 30911317947501920, guid: 0c24c564f7bc3734f950529544461cb6, type: 3}
+  - {fileID: 2938494838744133878, guid: 33fec0ff2a79a5d459329a7cc6f25a8a, type: 3}
+  - {fileID: 6043798126212125360, guid: 5cad9d240052a21438bcad91fc0eb1a5, type: 3}
+  Common_Items: []
+  Elite_Items: []
+  Legendary_Items: []
+  Mythical_Items: []
+  common_Roll: 0.45
+  elite_Roll: 0.35
+  legendary_Roll: 0.125
+  mythical_Roll: 0.075

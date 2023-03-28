@@ -33,7 +33,6 @@ public class EnemyCombat : MonoBehaviour
         currentHP -= Damage;
         HP.text = ("HP: " + currentHP);
 
-
         if (currentHP <= 0)
         {
             Death();
@@ -44,8 +43,12 @@ public class EnemyCombat : MonoBehaviour
     {
         Debug.Log("dead");
         gM.GetCoins(gainedCoins);
-        Destroy(gameObject);
         sE.enemyCount--;
         sE.encountersSpawned--;
+        //Should the enemy drop an item on death?
+        float dropItem = Random.Range(0, 1);
+        if (dropItem >= 0.825f)
+            FindObjectOfType<RollItem>().Gamble();
+        Destroy(gameObject);
     }
 }

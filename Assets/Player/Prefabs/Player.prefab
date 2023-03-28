@@ -198,8 +198,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34f85664c27408e41b7864d52b5764d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentHP: 9999
-  maxHP: 9999
+  currentHP: 100
+  maxHP: 100
   i_frames: 0
   HP: {fileID: 0}
   shakeTime: 0.3
@@ -232,6 +232,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   capacity: 0
   items: []
+  ItemLog: {fileID: 0}
 --- !u!70 &1963298579
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

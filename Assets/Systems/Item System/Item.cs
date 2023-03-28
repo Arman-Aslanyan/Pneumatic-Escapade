@@ -9,10 +9,13 @@ public class Item : MonoBehaviour
     public int maxStacks = 1;
 
     //Reference variables for the Items to use
-    public WeaponHolder weaponHolder;
-    public ParticleGuns[] Weapons;
-    public Combat PlayerCombat;
-    public Inventory inventory;
+    [HideInInspector] public WeaponHolder weaponHolder;
+    [HideInInspector] public ParticleGuns[] Weapons;
+    [HideInInspector] public Combat PlayerCombat;
+    [HideInInspector] public PlayerMovement playerMovement;
+    [HideInInspector] public Inventory inventory;
+
+    public Rarity rarity;
 
     private void Start()
     {
@@ -23,6 +26,7 @@ public class Item : MonoBehaviour
             weaponHolder = FindObjectOfType<WeaponHolder>();
             Weapons = weaponHolder.GetComponentsInChildren<ParticleGuns>();
             PlayerCombat = GameObject.FindGameObjectWithTag("Player").GetComponent<Combat>();
+            playerMovement = FindObjectOfType<PlayerMovement>();
             inventory = FindObjectOfType<Inventory>();
         }
     }
@@ -40,4 +44,11 @@ public class Item : MonoBehaviour
             GetComponent<Collider2D>().enabled = false;
         }
     }
+}
+public enum Rarity
+{
+    Common,
+    Elite,
+    Legendary,
+    Mythical
 }
