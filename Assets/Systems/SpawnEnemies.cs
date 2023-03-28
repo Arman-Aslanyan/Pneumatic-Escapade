@@ -39,23 +39,6 @@ public class SpawnEnemies : MonoBehaviour
         {
             currentEnemyCount.text = ("");
         }    
-
-        if (Input.GetKeyDown(KeyCode.J))
-        {
-            RestartEnemyEncounter();
-        }
-
-        if (Input.GetKeyDown(KeyCode.L))
-        {
-            EncounterUp();
-        }
-        if (Input.GetKeyDown(KeyCode.K))
-        {
-            EnemyLimitUp();
-        }
-
-
-
     }
 
     IEnumerator SpawnAnEnemy()
