@@ -73,6 +73,7 @@ public class SpawnEnemies : MonoBehaviour
     public void SpawnABoss()
     {
             bossAlert.SetActive(true);
+            enemyCount++;
             encountersSpawned++;
             Vector2 spawnPos = GameObject.Find("Player").transform.position;
             spawnPos += Random.insideUnitCircle.normalized * spawnRadius;
