@@ -5,8 +5,9 @@ using UnityEngine;
 public class ARegularScrewdriver : Item
 {
     private bool InEffect = false;
-    private int effectStacks = 0; //Yes I know that this variable actually has no effect on the script.
+    private int effectStacks = 0;
     private Coroutine coroutine;
+    private float time = 0;
     
     // Update is called once per frame
     void Update()
@@ -15,12 +16,16 @@ public class ARegularScrewdriver : Item
         {
             foreach (ParticleGuns weapon in Weapons)
             {
-                weapon.stats.gunDamage += 0.5f;
+                weapon.stats.gunDamage += 0.5f * stacks;
             }
             ++effectStacks;
             InEffect = false;
             coroutine = StartCoroutine(TimeUntilNextStack());
         }
+
+        if (playerMovement.rb.velocity == Vector2.zero)
+            time += Time.deltaTime;
+        if (time >= 3f) RemoveAllStacks();
     }
 
     public override void OnPickUp()
@@ -28,8 +33,13 @@ public class ARegularScrewdriver : Item
         print("A Reguar Screwdriver has been picked up!");
         base.OnPickUp();
         //Gain one Screw for every 10 seconds that you go without taking damage in a room. Lose all stacks on taking damage or moving
-        effectStacks = 0;
-        InEffect = true;
+        //more stacks increases the damage gain from each Screw
+        if (proc)
+        {
+            effectStacks = 0;
+            InEffect = true;
+            proc = false;
+        }
     }
 
     private IEnumerator TimeUntilNextStack()
@@ -40,7 +50,9 @@ public class ARegularScrewdriver : Item
 
     public void RemoveAllStacks()
     {
-        StopCoroutine(coroutine);
+        //Avoids an unnecesarry error
+        if (coroutine != null)
+            StopCoroutine(coroutine);
         for (int i = 0; i < effectStacks; i++)
         {
             foreach (ParticleGuns weapon in Weapons)
@@ -49,5 +61,6 @@ public class ARegularScrewdriver : Item
             }
         }
         effectStacks = 0;
+        time = 0;
     }
 }

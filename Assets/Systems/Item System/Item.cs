@@ -8,6 +8,9 @@ public class Item : MonoBehaviour
     public int stacks = 0;
     public int maxStacks = 1;
 
+    //Should the item's effect go off? Yes if succesfully picked up
+    [HideInInspector] public bool proc = false;
+
     //Reference variables for the Items to use
     [HideInInspector] public WeaponHolder weaponHolder;
     [HideInInspector] public ParticleGuns[] Weapons;
@@ -40,9 +43,10 @@ public class Item : MonoBehaviour
             if (stacks == 0)
                 inventory._items.Add(this);
             ++stacks;
+            proc = true;
             GetComponent<SpriteRenderer>().forceRenderingOff = true;
-            GetComponent<Collider2D>().enabled = false;
         }
+        GetComponent<Collider2D>().enabled = false;
     }
 }
 public enum Rarity

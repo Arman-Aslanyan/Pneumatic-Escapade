@@ -12,7 +12,7 @@ public class Consumable : Item
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.G))
+        if (stacks > 0 && Input.GetKeyDown(KeyCode.G))
         {
             print("Triggering consumable!");
             OnTriggerEffect();

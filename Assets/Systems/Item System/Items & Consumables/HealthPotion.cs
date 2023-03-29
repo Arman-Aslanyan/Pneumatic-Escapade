@@ -23,8 +23,12 @@ public class HealthPotion : Consumable
     public override void OnTriggerEffect()
     {
         int healing = Random.Range(heal_LowerLim, heal_UpperLim + 1);
+        //Item functionality
+        InvigoratingElixir invigElixir = FindObjectOfType<InvigoratingElixir>();
+        if (invigElixir.InEffect)
+            healing = (int)(healing + (1 + 0.15f * invigElixir.stacks));
         print(PlayerCombat.currentHP);
-        //PlayerCombat.currentHP += healing;
+        PlayerCombat.Heal(healing);
         print("Healed " + healing + " hp!");
         base.OnTriggerEffect();
     }

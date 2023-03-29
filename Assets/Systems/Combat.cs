@@ -48,4 +48,11 @@ public class Combat : MonoBehaviour
         i_frames = enableI_Frames;
     }
 
+
+    public virtual void Heal(float healAmount)
+    {
+        currentHP += healAmount;
+        if (currentHP > maxHP)
+            currentHP = maxHP;
+    }
 }

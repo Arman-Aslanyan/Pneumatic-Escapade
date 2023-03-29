@@ -35,6 +35,14 @@ public class EnemyCombat : MonoBehaviour
 
     public virtual void TakeDamage(float Damage)
     {
+        //Item functionality
+        EyeOfRa crit = FindObjectOfType<EyeOfRa>();
+        if (crit.InEffect)
+        {
+            float rand = Random.Range(0f, 1f);
+            if (rand >= 1 - (2.5f * crit.stacks))
+                Damage *= 2;
+        }
         currentHP -= Damage;
         HP.text = ("HP: " + currentHP);
 

@@ -9,6 +9,10 @@ public class JetFuel : Item
         print("Jet Fuel has been picked up!");
         base.OnPickUp();
         //Increase player's dash length
-        playerMovement.dashTime += 0.5f;
+        if (proc)
+        {
+            playerMovement.dashTime += 0.5f;
+            proc = false;
+        }
     }
 }

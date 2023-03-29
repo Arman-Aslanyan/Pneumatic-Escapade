@@ -2,16 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SoulSteel : Item
+public class EyeOfRa : Item
 {
+    public bool InEffect = false;
+
     public override void OnPickUp()
     {
-        print("SoulSteel has been picked up!");
+        print("Eye of Ra has been picked up!");
         base.OnPickUp();
-        //Buffs players maxHP
+        //Gives the player a 2.5% chance to 'Crit' dealing double damage
         if (proc)
         {
-            PlayerCombat.maxHP += 5;
+            InEffect = true;
             proc = false;
         }
     }
