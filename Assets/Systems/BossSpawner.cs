@@ -13,11 +13,6 @@ public class BossSpawner : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        spEn.SpawnABoss();
-
-        if (isAttached == false)
-        {
-            gameObject.SetActive(false);
-        }
+        StartCoroutine(spEn.SpawnABoss());
     }
 }

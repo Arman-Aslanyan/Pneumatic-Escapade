@@ -54,7 +54,6 @@ public class EnemyCombat : MonoBehaviour
 
     public virtual void Death()
     {
-        sE.enemyCount--;
         sE.encountersSpawned--;
         int dropcoin = Random.Range(minCoin, maxCoin);
         gM.GetCoins(dropcoin);
@@ -63,12 +62,14 @@ public class EnemyCombat : MonoBehaviour
         //Should the enemy drop an item on death?
         if (isBoss == false)
         {
+            sE.enemyCount--;
             float dropItem = Random.Range(0, 1);
             if (dropItem >= 0.825f)
                 FindObjectOfType<RollItem>().Gamble();
         }
         if (isBoss == true)
         {
+            spEn.bossCount--;
             spEn.bossAlert.SetActive(false);
             float dropItem = Random.Range(0, 1);
             if (dropItem >= 0.2f)

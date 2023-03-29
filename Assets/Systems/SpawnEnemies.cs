@@ -33,7 +33,7 @@ public class SpawnEnemies : MonoBehaviour
     {
         if (enemyCount > 0)
         {
-            encounterNum.text = ("Required Defeats: " + enemyCount);
+            encounterNum.text = ("Required Defeats: " + enemyCount + "  " + bossCount);
             Doors.SetActive(true);
         }
         else if (enemyCount == 0)
@@ -42,6 +42,11 @@ public class SpawnEnemies : MonoBehaviour
             currentEnemyCount.text = ("");
             StopCoroutine(SpawnAnEnemy());
             Doors.SetActive(false);
+        }
+
+        if(bossCount > 1)
+        {
+            StopCoroutine(SpawnABoss());
         }
         if (encountersSpawned > 0)
         {
@@ -63,21 +68,25 @@ public class SpawnEnemies : MonoBehaviour
             spawnPos += Random.insideUnitCircle.normalized * spawnRadius;
 
             Instantiate(enemies[Random.Range(0, enemies.Length)], spawnPos, Quaternion.identity);
-
+            encountersSpawned++;
             yield return new WaitForSeconds(time);
             StartCoroutine(SpawnAnEnemy());
-            encountersSpawned++;
         }
     }
 
-    public void SpawnABoss()
+    public IEnumerator SpawnABoss()
     {
+        if(bossCount < 1)
+        {
             bossAlert.SetActive(true);
-            enemyCount++;
-            encountersSpawned++;
             Vector2 spawnPos = GameObject.Find("Player").transform.position;
             spawnPos += Random.insideUnitCircle.normalized * spawnRadius;
             Instantiate(bosses[Random.Range(0, bosses.Length)], spawnPos, Quaternion.identity);
+            bossCount++;
+            encountersSpawned++;
+            yield return new WaitForSeconds(time);
+            StopCoroutine(SpawnABoss());
+        }
     }
     public void EncounterUp(int encounterUp)
     {

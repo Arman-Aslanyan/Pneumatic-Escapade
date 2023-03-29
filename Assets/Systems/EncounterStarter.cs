@@ -13,10 +13,13 @@ public class EncounterStarter : MonoBehaviour
     public float spawnTime;
     public SpawnEnemies spEn;
 
+    public BoxCollider2D col;
+
     // Start is called before the first frame update
     void Start()
     {
         spEn = FindObjectOfType<SpawnEnemies>();
+        col = FindObjectOfType<BoxCollider2D>();
 
     }
 
@@ -29,7 +32,7 @@ public class EncounterStarter : MonoBehaviour
 
         spEn.spawnRadius = spawnRadius;
         spEn.time = spawnTime;
-        gameObject.SetActive(false);
+        col.enabled = !col.enabled;
         
     }
 
