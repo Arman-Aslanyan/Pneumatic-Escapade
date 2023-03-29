@@ -14,6 +14,7 @@ public class EnemyGunfire : MonoBehaviour
     public bool canFire;
     public bool firing;
     public bool reloading;
+    public bool turret;
 
     public float shakeTime;
     public float shakeIntensity;
@@ -40,7 +41,10 @@ public class EnemyGunfire : MonoBehaviour
             Reloading();
         }
 
-        transform.LookAt(playerPoint);
+        if (turret == false)
+        {
+            transform.LookAt(playerPoint);
+        }
 
     }
 

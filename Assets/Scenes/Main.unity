@@ -1066,7 +1066,7 @@ MonoBehaviour:
   m_LightType: 4
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
-  m_Color: {r: 0.7688679, g: 1, b: 0.9533235, a: 1}
+  m_Color: {r: 0, g: 1, b: 0.9155474, a: 1}
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
@@ -1861,7 +1861,7 @@ MonoBehaviour:
   spawnRadius: 7
   spawnTime: 1
   spEn: {fileID: 0}
-  col: {fileID: 0}
+  col: {fileID: 853066581}
 --- !u!4 &1079905987 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7355140754623943670, guid: 8cc259e1926df2d428b50dc7ff716adf, type: 3}
@@ -7571,11 +7571,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7032620300620519861, guid: ea3a36cea3e0cd54da280945613838e7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 1.3
       objectReference: {fileID: 0}
     - target: {fileID: 7032620300620519861, guid: ea3a36cea3e0cd54da280945613838e7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.57
       objectReference: {fileID: 0}
     - target: {fileID: 7032620300620519861, guid: ea3a36cea3e0cd54da280945613838e7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -7647,7 +7647,7 @@ MonoBehaviour:
   spawnRadius: 10
   spawnTime: 0.1
   spEn: {fileID: 0}
-  col: {fileID: 0}
+  col: {fileID: 1800035113}
 --- !u!61 &1800035113
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7738,7 +7738,7 @@ MonoBehaviour:
   spawnRadius: 8
   spawnTime: 1
   spEn: {fileID: 0}
-  col: {fileID: 0}
+  col: {fileID: 1824246371}
 --- !u!61 &1824246371
 BoxCollider2D:
   m_ObjectHideFlags: 0
