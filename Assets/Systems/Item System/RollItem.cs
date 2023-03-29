@@ -48,27 +48,32 @@ public class RollItem : MonoBehaviour
 
     public void Gamble()
     {
+        print("gambling");
         float rand = Random.Range(0f, 1f);
 
         if (rand >= 1 - mythical_Roll)
         {
+            print("Mythical");
             int randInt = Random.Range(0, Mythical_Items.Count);
             Mythical_Items[randInt].OnPickUp();
         }
         else if (rand >= 1 - legendary_Roll)
         {
+            print("Legendary");
             int randInt = Random.Range(0, Legendary_Items.Count);
             Legendary_Items[randInt].OnPickUp();
         }
         else if (rand >= 1 - elite_Roll)
         {
+            print("Elite");
             int randInt = Random.Range(0, Legendary_Items.Count);
             Legendary_Items[randInt].OnPickUp();
         }
-        else if (rand >= 1 - common_Roll)
+        else// if (rand >= 1 - common_Roll)
         {
+            print("Common");
             int randInt = Random.Range(0, Common_Items.Count);
-            Common_Items[randInt].GetComponent<CapsuleCollider2D>().enabled = true;
+            Common_Items[randInt].OnPickUp();
         }
     }
 }

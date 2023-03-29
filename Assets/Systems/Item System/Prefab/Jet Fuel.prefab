@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8362792857498431160}
   m_Layer: 0
   m_Name: Jet Fuel
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -116,6 +116,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stacks: 0
   maxStacks: 3
+  proc: 0
   weaponHolder: {fileID: 0}
   Weapons: []
   PlayerCombat: {fileID: 0}

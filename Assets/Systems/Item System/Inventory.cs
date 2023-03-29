@@ -36,10 +36,10 @@ public class Inventory : MonoBehaviour
     {
         yield return new WaitForSeconds(3.5f);
     }
-
-    //DEPRECATED
+    
     private void OnTriggerEnter2D(Collider2D other)
     {
-        other.GetComponent<Item>().OnPickUp();
+        if (other.CompareTag("Item"))
+            other.GetComponent<Item>().OnPickUp();
     }
 }
