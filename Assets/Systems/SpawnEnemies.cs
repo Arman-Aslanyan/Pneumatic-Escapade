@@ -18,8 +18,6 @@ public class SpawnEnemies : MonoBehaviour
     public GameObject bossAlert;
     public int bossesSpawned;
     public int bossLimit;
-    public TMP_Text bossNum;
-    public TMP_Text currentbossCount;
 
     public GameObject[] enemies;
     public GameObject[] bosses;
@@ -29,15 +27,10 @@ public class SpawnEnemies : MonoBehaviour
     public void Start()
     {
         Doors.SetActive(false);
-        bossAlert = GameObject.Find("RedAlert");
     }
 
     public void Update()
     {
-        if(enemyCount < 0)
-        {
-            enemyCount = 0;
-        }
         if (enemyCount > 0)
         {
             encounterNum.text = ("Required Defeats: " + enemyCount);
@@ -47,7 +40,18 @@ public class SpawnEnemies : MonoBehaviour
         {
             encounterNum.text = ("");
             StopCoroutine(SpawnAnEnemy());
+            Doors.SetActive(false);
         }
+        if (encountersSpawned > 0)
+        {
+            currentEnemyCount.text = ("enemies remaining: " + encountersSpawned);
+        }
+
+        if (enemyCount < 0)
+        {
+            enemyCount = 0;
+        }
+
     }
 
     IEnumerator SpawnAnEnemy()
@@ -71,7 +75,7 @@ public class SpawnEnemies : MonoBehaviour
             encountersSpawned++;
             Vector2 spawnPos = GameObject.Find("Player").transform.position;
             spawnPos += Random.insideUnitCircle.normalized * spawnRadius;
-            Instantiate(bosses[Random.Range(0, enemies.Length)], spawnPos, Quaternion.identity);
+            Instantiate(bosses[Random.Range(0, bosses.Length)], spawnPos, Quaternion.identity);
     }
     public void EncounterUp(int encounterUp)
     {

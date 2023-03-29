@@ -10,7 +10,9 @@ public class EnemyCombat : MonoBehaviour
     public float maxHP;
     public TMP_Text HP;
     private GameManager gM;
-    public int gainedCoins;
+
+    public int minCoin;
+    public int maxCoin;
     public bool isBoss;
 
     public SpawnEnemies sE;
@@ -44,10 +46,10 @@ public class EnemyCombat : MonoBehaviour
 
     public virtual void Death()
     {
-        Debug.Log("dead");
-        gM.GetCoins(gainedCoins);
-        sE.enemyCount--;
-        sE.encountersSpawned--;
+        int dropcoin = Random.Range(minCoin, maxCoin);
+        gM.GetCoins(dropcoin);
+
+
         //Should the enemy drop an item on death?
         if (isBoss == false)
         {
@@ -62,6 +64,8 @@ public class EnemyCombat : MonoBehaviour
             if (dropItem >= 0.2f)
                 FindObjectOfType<RollItem>().Gamble();
         }
+        sE.enemyCount--;
+        sE.encountersSpawned--;
         Destroy(gameObject);
     }
 }
