@@ -153,13 +153,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6937834537005552277}
     m_Modifications:
+    - target: {fileID: 5199566063751749744, guid: 0e4994592add39e4285c17ea88da87d9, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 5199566063751749745, guid: 0e4994592add39e4285c17ea88da87d9, type: 3}
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5199566063751749745, guid: 0e4994592add39e4285c17ea88da87d9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.92
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5199566063751749745, guid: 0e4994592add39e4285c17ea88da87d9, type: 3}
       propertyPath: m_LocalPosition.y
@@ -626,13 +630,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6937834537005552277}
     m_Modifications:
+    - target: {fileID: 1330493932377575962, guid: a3ddb263a7b403347841d380c3087fb5, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 1330493932377575963, guid: a3ddb263a7b403347841d380c3087fb5, type: 3}
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1330493932377575963, guid: a3ddb263a7b403347841d380c3087fb5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.91
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1330493932377575963, guid: a3ddb263a7b403347841d380c3087fb5, type: 3}
       propertyPath: m_LocalPosition.y
@@ -693,6 +701,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6937834537005552277}
     m_Modifications:
+    - target: {fileID: 616718625438075873, guid: 5cad9d240052a21438bcad91fc0eb1a5, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 6043798126212125360, guid: 5cad9d240052a21438bcad91fc0eb1a5, type: 3}
       propertyPath: m_Name
       value: Fuel array
@@ -703,7 +715,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6649298650506642826, guid: 5cad9d240052a21438bcad91fc0eb1a5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.91
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6649298650506642826, guid: 5cad9d240052a21438bcad91fc0eb1a5, type: 3}
       propertyPath: m_LocalPosition.y
@@ -766,7 +778,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2518474311107583836, guid: 33fec0ff2a79a5d459329a7cc6f25a8a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.91
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2518474311107583836, guid: 33fec0ff2a79a5d459329a7cc6f25a8a, type: 3}
       propertyPath: m_LocalPosition.y
@@ -808,6 +820,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jet Fuel
       objectReference: {fileID: 0}
+    - target: {fileID: 8420058196862053948, guid: 33fec0ff2a79a5d459329a7cc6f25a8a, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 33fec0ff2a79a5d459329a7cc6f25a8a, type: 3}
 --- !u!4 &4691913403656865788 stripped
@@ -831,13 +847,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Armor-Piercing Rounds
       objectReference: {fileID: 0}
+    - target: {fileID: 8241022779751165180, guid: 10f44cd8a1015cb49885ebd8089359e7, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 8241022779751165181, guid: 10f44cd8a1015cb49885ebd8089359e7, type: 3}
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8241022779751165181, guid: 10f44cd8a1015cb49885ebd8089359e7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.91
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8241022779751165181, guid: 10f44cd8a1015cb49885ebd8089359e7, type: 3}
       propertyPath: m_LocalPosition.y
@@ -894,6 +914,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6937834537005552277}
     m_Modifications:
+    - target: {fileID: 30911317947501916, guid: 0c24c564f7bc3734f950529544461cb6, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 30911317947501920, guid: 0c24c564f7bc3734f950529544461cb6, type: 3}
       propertyPath: m_Name
       value: Jar of Jelly
@@ -904,7 +928,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 30911317947501921, guid: 0c24c564f7bc3734f950529544461cb6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.91
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 30911317947501921, guid: 0c24c564f7bc3734f950529544461cb6, type: 3}
       propertyPath: m_LocalPosition.y

@@ -64,8 +64,11 @@ public class EnemyCombat : MonoBehaviour
         {
             sE.enemyCount--;
             float dropItem = Random.Range(0, 1);
-            if (dropItem >= 0.825f)
+            if (dropItem >= 0f)
+            {
+                print("Item has been dropped");
                 FindObjectOfType<RollItem>().Gamble();
+            }
         }
         if (isBoss == true)
         {

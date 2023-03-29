@@ -1861,6 +1861,7 @@ MonoBehaviour:
   spawnRadius: 7
   spawnTime: 1
   spEn: {fileID: 0}
+  col: {fileID: 0}
 --- !u!4 &1079905987 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7355140754623943670, guid: 8cc259e1926df2d428b50dc7ff716adf, type: 3}
@@ -7558,23 +7559,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7032620300620519861, guid: ea3a36cea3e0cd54da280945613838e7, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.864451
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7032620300620519861, guid: ea3a36cea3e0cd54da280945613838e7, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.864451
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7032620300620519861, guid: ea3a36cea3e0cd54da280945613838e7, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.864451
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7032620300620519861, guid: ea3a36cea3e0cd54da280945613838e7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -17.6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7032620300620519861, guid: ea3a36cea3e0cd54da280945613838e7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 73.7
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7032620300620519861, guid: ea3a36cea3e0cd54da280945613838e7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -7646,6 +7647,7 @@ MonoBehaviour:
   spawnRadius: 10
   spawnTime: 0.1
   spEn: {fileID: 0}
+  col: {fileID: 0}
 --- !u!61 &1800035113
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7736,6 +7738,7 @@ MonoBehaviour:
   spawnRadius: 8
   spawnTime: 1
   spEn: {fileID: 0}
+  col: {fileID: 0}
 --- !u!61 &1824246371
 BoxCollider2D:
   m_ObjectHideFlags: 0

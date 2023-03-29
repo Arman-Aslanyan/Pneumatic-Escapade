@@ -6,7 +6,6 @@ public class PlayerMovement : MonoBehaviour
 {
     //Internal is public, but its hidden in Unity
     internal Rigidbody2D rb;
-    internal Collider2D collider;
 
     //Movement & dashing
     public float moveSpeed = 5f;
@@ -41,7 +40,6 @@ public class PlayerMovement : MonoBehaviour
     {
         combat = GetComponent<Combat>();
         rb = GetComponent<Rigidbody2D>();
-        collider = GetComponent<Collider2D>();
         //animator = GetComponent<Animator>();
     }
 
