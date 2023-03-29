@@ -39,6 +39,7 @@ public class SpawnEnemies : MonoBehaviour
         else if (enemyCount == 0)
         {
             encounterNum.text = ("");
+            currentEnemyCount.text = ("");
             StopCoroutine(SpawnAnEnemy());
             Doors.SetActive(false);
         }
@@ -58,7 +59,6 @@ public class SpawnEnemies : MonoBehaviour
     {
         if (enemyCount > 0 && encountersSpawned <= encounterLimit || encountersSpawned < 2)
         {
-            encountersSpawned++;
             Vector2 spawnPos = GameObject.Find("Player").transform.position;
             spawnPos += Random.insideUnitCircle.normalized * spawnRadius;
 
@@ -66,6 +66,7 @@ public class SpawnEnemies : MonoBehaviour
 
             yield return new WaitForSeconds(time);
             StartCoroutine(SpawnAnEnemy());
+            encountersSpawned++;
         }
     }
 

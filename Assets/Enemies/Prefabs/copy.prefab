@@ -29403,8 +29403,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5bd13711183c064f893038a35b36768, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentHP: 500
-  maxHP: 500
+  currentHP: 200
+  maxHP: 200
   HP: {fileID: 2742719503296636422}
   minCoin: 50
   maxCoin: 100

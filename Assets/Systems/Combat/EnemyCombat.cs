@@ -46,6 +46,8 @@ public class EnemyCombat : MonoBehaviour
 
     public virtual void Death()
     {
+        sE.enemyCount--;
+        sE.encountersSpawned--;
         int dropcoin = Random.Range(minCoin, maxCoin);
         gM.GetCoins(dropcoin);
 
@@ -64,8 +66,6 @@ public class EnemyCombat : MonoBehaviour
             if (dropItem >= 0.2f)
                 FindObjectOfType<RollItem>().Gamble();
         }
-        sE.enemyCount--;
-        sE.encountersSpawned--;
         Destroy(gameObject);
     }
 }
