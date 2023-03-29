@@ -19,7 +19,7 @@ public class EncounterStarter : MonoBehaviour
     void Start()
     {
         spEn = FindObjectOfType<SpawnEnemies>();
-        col = FindObjectOfType<BoxCollider2D>();
+        //col = FindObjectOfType<BoxCollider2D>();
 
     }
 
@@ -33,7 +33,9 @@ public class EncounterStarter : MonoBehaviour
         spEn.spawnRadius = spawnRadius;
         spEn.time = spawnTime;
         col.enabled = !col.enabled;
-        
+
+        Debug.Log("Collider.enabled = " + col.enabled);
+
     }
 
 
