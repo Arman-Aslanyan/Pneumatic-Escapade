@@ -2,16 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SoulSteel : Item
+public class BackupMagazine : Item
 {
     public override void OnPickUp()
     {
-        print("SoulSteel has been picked up!");
+        print("Back-Up Magazine has been picked up!");
         base.OnPickUp();
-        //Buffs players maxHP
         if (proc)
         {
-            PlayerCombat.maxHP += 5;
+            foreach (ParticleGuns weapon in Weapons)
+                weapon.stats.ammoMax = (int)(weapon.stats.ammoMax * 1.025f);
             proc = false;
         }
     }

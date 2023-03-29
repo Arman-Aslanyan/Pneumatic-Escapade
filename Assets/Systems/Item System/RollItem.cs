@@ -48,9 +48,7 @@ public class RollItem : MonoBehaviour
 
     public void Gamble()
     {
-        print("AAAAAAAAAA");
-        Common_Items[0].GetComponent<Collider2D>().enabled = true;
-        float rand = Random.Range(0, 1);
+        float rand = Random.Range(0f, 1f);
 
         if (rand >= 1 - mythical_Roll)
         {
@@ -70,7 +68,7 @@ public class RollItem : MonoBehaviour
         else if (rand >= 1 - common_Roll)
         {
             int randInt = Random.Range(0, Common_Items.Count);
-            Common_Items[randInt].GetComponent<Collider2D>().enabled = true;
+            Common_Items[randInt].GetComponent<CapsuleCollider2D>().enabled = true;
         }
     }
 }

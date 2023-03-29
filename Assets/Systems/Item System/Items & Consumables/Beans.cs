@@ -2,16 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SoulSteel : Item
+public class Beans : Item
 {
     public override void OnPickUp()
     {
-        print("SoulSteel has been picked up!");
+        print("Beans has been picked up!");
         base.OnPickUp();
-        //Buffs players maxHP
+        //Increase the player's 
         if (proc)
         {
-            PlayerCombat.maxHP += 5;
+            playerMovement.moveSpeed += 0.2f;
             proc = false;
         }
     }
