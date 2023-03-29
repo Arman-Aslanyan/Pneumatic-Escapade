@@ -40,7 +40,7 @@ public class Combat : MonoBehaviour
 
     public virtual void Death()
     {
-        Debug.Log("dead");
+
     }
 
     public virtual void SetI_Frames(bool enableI_Frames)

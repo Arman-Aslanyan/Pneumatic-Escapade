@@ -29407,8 +29407,10 @@ MonoBehaviour:
   maxHP: 500
   HP: {fileID: 2742719503296636422}
   gainedCoins: 500
+  isBoss: 1
   sE: {fileID: 0}
   spawnEffect: {fileID: 7815057208917191966, guid: 771e328d74d83d14e913f905f69abf0e, type: 3}
+  spEn: {fileID: 0}
 --- !u!1 &9118674359083706310
 GameObject:
   m_ObjectHideFlags: 0

@@ -11,15 +11,18 @@ public class EnemyCombat : MonoBehaviour
     public TMP_Text HP;
     private GameManager gM;
     public int gainedCoins;
+    public bool isBoss;
 
     public SpawnEnemies sE;
     public GameObject spawnEffect;
+    public SpawnEnemies spEn;
 
 
 
     // Start is called before the first frame update
     void Start()
     {
+        spEn = FindObjectOfType<SpawnEnemies>();
         HP.text = (" ");
         gM = FindObjectOfType<GameManager>();
         sE = FindObjectOfType<SpawnEnemies>();
@@ -46,9 +49,19 @@ public class EnemyCombat : MonoBehaviour
         sE.enemyCount--;
         sE.encountersSpawned--;
         //Should the enemy drop an item on death?
-        float dropItem = Random.Range(0, 1);
-        if (dropItem >= 0.825f)
-            FindObjectOfType<RollItem>().Gamble();
+        if (isBoss == false)
+        {
+            float dropItem = Random.Range(0, 1);
+            if (dropItem >= 0.825f)
+                FindObjectOfType<RollItem>().Gamble();
+        }
+        if (isBoss == true)
+        {
+            spEn.bossAlert.SetActive(false);
+            float dropItem = Random.Range(0, 1);
+            if (dropItem >= 0.2f)
+                FindObjectOfType<RollItem>().Gamble();
+        }
         Destroy(gameObject);
     }
 }

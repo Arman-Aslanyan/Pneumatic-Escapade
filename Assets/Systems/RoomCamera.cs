@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Cinemachine;
 
 public class RoomCamera : MonoBehaviour
 {
@@ -11,6 +12,9 @@ public class RoomCamera : MonoBehaviour
         if(other.CompareTag("Player") && !other.isTrigger)
         {
             virtCam.SetActive(true);
+            CinemachineVirtualCamera vcam;
+            vcam = FindObjectOfType<CinemachineVirtualCamera>();
+            vcam.Follow = GameObject.Find("Player").transform;
         }
     }
 
