@@ -1341,7 +1341,7 @@ PrefabInstance:
       objectReference: {fileID: 1972469615}
     - target: {fileID: 4355853846786985625, guid: 8cc259e1926df2d428b50dc7ff716adf, type: 3}
       propertyPath: m_Lens.OrthographicSize
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7355140754623943669, guid: 8cc259e1926df2d428b50dc7ff716adf, type: 3}
       propertyPath: m_Name
@@ -1489,7 +1489,7 @@ PrefabInstance:
       objectReference: {fileID: 1972469615}
     - target: {fileID: 4355853846786985625, guid: 8cc259e1926df2d428b50dc7ff716adf, type: 3}
       propertyPath: m_Lens.OrthographicSize
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7355140754623943669, guid: 8cc259e1926df2d428b50dc7ff716adf, type: 3}
       propertyPath: m_Name
@@ -1941,7 +1941,7 @@ PrefabInstance:
       objectReference: {fileID: 1972469615}
     - target: {fileID: 4355853846786985625, guid: 8cc259e1926df2d428b50dc7ff716adf, type: 3}
       propertyPath: m_Lens.OrthographicSize
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7355140754623943669, guid: 8cc259e1926df2d428b50dc7ff716adf, type: 3}
       propertyPath: m_Name
@@ -2269,6 +2269,10 @@ PrefabInstance:
       propertyPath: m_Priority
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 4355853846786985625, guid: 8cc259e1926df2d428b50dc7ff716adf, type: 3}
+      propertyPath: m_Lens.OrthographicSize
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 7355140754623943669, guid: 8cc259e1926df2d428b50dc7ff716adf, type: 3}
       propertyPath: m_Name
       value: 5
@@ -2388,7 +2392,7 @@ PrefabInstance:
       objectReference: {fileID: 1972469615}
     - target: {fileID: 4355853846786985625, guid: 8cc259e1926df2d428b50dc7ff716adf, type: 3}
       propertyPath: m_Lens.OrthographicSize
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7355140754623943669, guid: 8cc259e1926df2d428b50dc7ff716adf, type: 3}
       propertyPath: m_Name
@@ -7370,7 +7374,7 @@ PrefabInstance:
       objectReference: {fileID: 1972469615}
     - target: {fileID: 4355853846786985625, guid: 8cc259e1926df2d428b50dc7ff716adf, type: 3}
       propertyPath: m_Lens.OrthographicSize
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7355140754623943669, guid: 8cc259e1926df2d428b50dc7ff716adf, type: 3}
       propertyPath: m_Name
@@ -7479,7 +7483,7 @@ PrefabInstance:
       objectReference: {fileID: 1972469615}
     - target: {fileID: 4355853846786985625, guid: 8cc259e1926df2d428b50dc7ff716adf, type: 3}
       propertyPath: m_Lens.OrthographicSize
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7355140754623943669, guid: 8cc259e1926df2d428b50dc7ff716adf, type: 3}
       propertyPath: m_Name
@@ -7609,7 +7613,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4355853846786985625, guid: 8cc259e1926df2d428b50dc7ff716adf, type: 3}
       propertyPath: m_Lens.OrthographicSize
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7355140754623943669, guid: 8cc259e1926df2d428b50dc7ff716adf, type: 3}
       propertyPath: m_Name
@@ -7800,7 +7804,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4355853846786985625, guid: 8cc259e1926df2d428b50dc7ff716adf, type: 3}
       propertyPath: m_Lens.OrthographicSize
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7355140754623943669, guid: 8cc259e1926df2d428b50dc7ff716adf, type: 3}
       propertyPath: m_Name
