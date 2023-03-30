@@ -14,7 +14,7 @@ public class ParticleGuns : MonoBehaviour
     public WeaponStats stats;
     public float shakeTime;
     public float shakeIntensity;
-
+    private Animator playerAnim;
 
     public bool canFire;
     public bool firing;
@@ -35,6 +35,8 @@ public class ParticleGuns : MonoBehaviour
 
         currentAmmo = stats.ammoMax;
         ammoRemaining.text = ("Ammo: " + currentAmmo);
+
+        playerAnim = FindObjectOfType<PlayerMovement>().GetComponent<Animator>();
     }
     private void Update()
     {
@@ -85,6 +87,7 @@ public class ParticleGuns : MonoBehaviour
 
     public void Shooting()
     {
+        //playerAnim.SetTrigger("PlayerShoot");
         firing = true;
 
         Bullet.Play();
