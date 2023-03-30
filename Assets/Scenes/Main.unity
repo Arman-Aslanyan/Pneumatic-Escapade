@@ -195,7 +195,13 @@ MonoBehaviour:
   bossLimit: 0
   enemies:
   - {fileID: 8411143270876031461, guid: ab8cd703137d69740b525f1a4139f23c, type: 3}
+  - {fileID: 8411143270876031461, guid: ab8cd703137d69740b525f1a4139f23c, type: 3}
+  - {fileID: 8411143270876031461, guid: ab8cd703137d69740b525f1a4139f23c, type: 3}
   - {fileID: 8411143270876031461, guid: 72ad52e78cfcdd5459b5e1bfd49c4af8, type: 3}
+  - {fileID: 8411143270876031461, guid: 72ad52e78cfcdd5459b5e1bfd49c4af8, type: 3}
+  - {fileID: 8411143270876031461, guid: 8bb5070b56299b145a476b627eb303aa, type: 3}
+  - {fileID: 8411143270876031461, guid: 8bb5070b56299b145a476b627eb303aa, type: 3}
+  - {fileID: 8411143270876031461, guid: cc108083b9169ea43b97b99aea5a3052, type: 3}
   - {fileID: 8411143270876031461, guid: cc108083b9169ea43b97b99aea5a3052, type: 3}
   - {fileID: 8411143270876031461, guid: 98e4ee998bde0dc468bfb4e8388e2211, type: 3}
   - {fileID: 8411143270876031461, guid: 98e4ee998bde0dc468bfb4e8388e2211, type: 3}
@@ -7505,6 +7511,10 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1308247504346586206, guid: ea3a36cea3e0cd54da280945613838e7, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1416526017107541149, guid: ea3a36cea3e0cd54da280945613838e7, type: 3}
       propertyPath: ammoRemaining
       value: 
@@ -7525,6 +7535,10 @@ PrefabInstance:
       propertyPath: ammoRemaining
       value: 
       objectReference: {fileID: 726840312}
+    - target: {fileID: 3146634294739721078, guid: ea3a36cea3e0cd54da280945613838e7, type: 3}
+      propertyPath: stats
+      value: 
+      objectReference: {fileID: 11400000, guid: 238a49abb0136d645b4c2d6aebc7a9bb, type: 2}
     - target: {fileID: 3146634294739721078, guid: ea3a36cea3e0cd54da280945613838e7, type: 3}
       propertyPath: ammoRemaining
       value: 
@@ -7590,6 +7604,38 @@ PrefabInstance:
       value: 65535
       objectReference: {fileID: 0}
     - target: {fileID: 5475230898732432302, guid: ea3a36cea3e0cd54da280945613838e7, type: 3}
+      propertyPath: InitialModule.size3D
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5475230898732432302, guid: ea3a36cea3e0cd54da280945613838e7, type: 3}
+      propertyPath: TrailModule.lifetime.scalar
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5475230898732432302, guid: ea3a36cea3e0cd54da280945613838e7, type: 3}
+      propertyPath: TrailModule.minVertexDistance
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5475230898732432302, guid: ea3a36cea3e0cd54da280945613838e7, type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5475230898732432302, guid: ea3a36cea3e0cd54da280945613838e7, type: 3}
+      propertyPath: CollisionModule.m_Bounce.scalar
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5475230898732432302, guid: ea3a36cea3e0cd54da280945613838e7, type: 3}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5475230898732432302, guid: ea3a36cea3e0cd54da280945613838e7, type: 3}
+      propertyPath: TrailModule.lifetime.minMaxState
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5475230898732432302, guid: ea3a36cea3e0cd54da280945613838e7, type: 3}
+      propertyPath: TrailModule.widthOverTrail.scalar
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5475230898732432302, guid: ea3a36cea3e0cd54da280945613838e7, type: 3}
       propertyPath: InitialModule.startColor.minMaxState
       value: 3
       objectReference: {fileID: 0}
@@ -7608,6 +7654,10 @@ PrefabInstance:
     - target: {fileID: 5475230898732432302, guid: ea3a36cea3e0cd54da280945613838e7, type: 3}
       propertyPath: InitialModule.startColor.minGradient.ctime2
       value: 65535
+      objectReference: {fileID: 0}
+    - target: {fileID: 5475230898732432302, guid: ea3a36cea3e0cd54da280945613838e7, type: 3}
+      propertyPath: CollisionModule.m_EnergyLossOnCollision.scalar
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7032620300620519818, guid: ea3a36cea3e0cd54da280945613838e7, type: 3}
       propertyPath: m_Name
