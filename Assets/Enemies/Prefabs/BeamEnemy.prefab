@@ -271,7 +271,7 @@ MonoBehaviour:
   radius: 0.5
   height: 2
   canMove: 1
-  maxSpeed: 3
+  maxSpeed: 5
   gravity: {x: NaN, y: NaN, z: NaN}
   groundMask:
     serializedVersion: 2
@@ -370,8 +370,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5bd13711183c064f893038a35b36768, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentHP: 10
-  maxHP: 10
+  currentHP: 3
+  maxHP: 3
   HP: {fileID: 4544472573843151680}
   minCoin: 2
   maxCoin: 7
@@ -561,7 +561,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8965798197671065892, guid: caaa987d53cfa6c4b80b05bd3b7cc21b, type: 3}
       propertyPath: InitialModule.startSpeed.scalar
-      value: 63.17
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 8965798197671065892, guid: caaa987d53cfa6c4b80b05bd3b7cc21b, type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
@@ -570,6 +570,22 @@ PrefabInstance:
     - target: {fileID: 8965798197671065892, guid: caaa987d53cfa6c4b80b05bd3b7cc21b, type: 3}
       propertyPath: CollisionModule.collidesWith.m_Bits
       value: 95
+      objectReference: {fileID: 0}
+    - target: {fileID: 8965798197671065892, guid: caaa987d53cfa6c4b80b05bd3b7cc21b, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.29803923
+      objectReference: {fileID: 0}
+    - target: {fileID: 8965798197671065892, guid: caaa987d53cfa6c4b80b05bd3b7cc21b, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8965798197671065892, guid: caaa987d53cfa6c4b80b05bd3b7cc21b, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.054901965
+      objectReference: {fileID: 0}
+    - target: {fileID: 8965798197671065892, guid: caaa987d53cfa6c4b80b05bd3b7cc21b, type: 3}
+      propertyPath: InitialModule.startColor.minMaxState
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8965798197671065892, guid: caaa987d53cfa6c4b80b05bd3b7cc21b, type: 3}
       propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.size
@@ -802,5 +818,6 @@ MonoBehaviour:
   canFire: 0
   firing: 0
   reloading: 0
+  turret: 0
   shakeTime: 0
   shakeIntensity: 0

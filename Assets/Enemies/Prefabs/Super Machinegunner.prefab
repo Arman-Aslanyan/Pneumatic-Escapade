@@ -514,6 +514,34 @@ PrefabInstance:
       propertyPath: CollisionModule.collidesWith.m_Bits
       value: 95
       objectReference: {fileID: 0}
+    - target: {fileID: 5820234125015345676, guid: e80257fe61045e54895f0c341c1e4ae4, type: 3}
+      propertyPath: InitialModule.startColor.minMaxState
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5820234125015345676, guid: e80257fe61045e54895f0c341c1e4ae4, type: 3}
+      propertyPath: InitialModule.startColor.maxGradient.key0.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5820234125015345676, guid: e80257fe61045e54895f0c341c1e4ae4, type: 3}
+      propertyPath: InitialModule.startColor.maxGradient.key0.g
+      value: 0.29948577
+      objectReference: {fileID: 0}
+    - target: {fileID: 5820234125015345676, guid: e80257fe61045e54895f0c341c1e4ae4, type: 3}
+      propertyPath: InitialModule.startColor.maxGradient.key0.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5820234125015345676, guid: e80257fe61045e54895f0c341c1e4ae4, type: 3}
+      propertyPath: InitialModule.startColor.maxGradient.key1.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5820234125015345676, guid: e80257fe61045e54895f0c341c1e4ae4, type: 3}
+      propertyPath: InitialModule.startColor.maxGradient.key1.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5820234125015345676, guid: e80257fe61045e54895f0c341c1e4ae4, type: 3}
+      propertyPath: InitialModule.startColor.maxGradient.key1.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6726407965605630302, guid: e80257fe61045e54895f0c341c1e4ae4, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -580,10 +608,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerPoint: {fileID: 0}
   currentAmmo: 0
-  stats: {fileID: 11400000, guid: 5f8126b2643e0fc4c8e6a390ed7f7466, type: 2}
+  stats: {fileID: 11400000, guid: da08c0b5972eae44a869b98858e9b446, type: 2}
   canFire: 0
   firing: 0
   reloading: 0
+  turret: 0
   shakeTime: 0
   shakeIntensity: 0
 --- !u!4 &6847752858861896249 stripped
@@ -616,11 +645,39 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5820234125015345676, guid: e80257fe61045e54895f0c341c1e4ae4, type: 3}
       propertyPath: InitialModule.startSpeed.scalar
-      value: 15
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 5820234125015345676, guid: e80257fe61045e54895f0c341c1e4ae4, type: 3}
       propertyPath: CollisionModule.collidesWith.m_Bits
       value: 95
+      objectReference: {fileID: 0}
+    - target: {fileID: 5820234125015345676, guid: e80257fe61045e54895f0c341c1e4ae4, type: 3}
+      propertyPath: InitialModule.startColor.minMaxState
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5820234125015345676, guid: e80257fe61045e54895f0c341c1e4ae4, type: 3}
+      propertyPath: InitialModule.startColor.maxGradient.key0.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5820234125015345676, guid: e80257fe61045e54895f0c341c1e4ae4, type: 3}
+      propertyPath: InitialModule.startColor.maxGradient.key0.g
+      value: 0.29948577
+      objectReference: {fileID: 0}
+    - target: {fileID: 5820234125015345676, guid: e80257fe61045e54895f0c341c1e4ae4, type: 3}
+      propertyPath: InitialModule.startColor.maxGradient.key0.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5820234125015345676, guid: e80257fe61045e54895f0c341c1e4ae4, type: 3}
+      propertyPath: InitialModule.startColor.maxGradient.key1.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5820234125015345676, guid: e80257fe61045e54895f0c341c1e4ae4, type: 3}
+      propertyPath: InitialModule.startColor.maxGradient.key1.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5820234125015345676, guid: e80257fe61045e54895f0c341c1e4ae4, type: 3}
+      propertyPath: InitialModule.startColor.maxGradient.key1.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6726407965605630302, guid: e80257fe61045e54895f0c341c1e4ae4, type: 3}
       propertyPath: m_RootOrder
@@ -688,10 +745,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerPoint: {fileID: 0}
   currentAmmo: 0
-  stats: {fileID: 11400000, guid: 5f8126b2643e0fc4c8e6a390ed7f7466, type: 2}
+  stats: {fileID: 11400000, guid: da08c0b5972eae44a869b98858e9b446, type: 2}
   canFire: 0
   firing: 0
   reloading: 0
+  turret: 0
   shakeTime: 0
   shakeIntensity: 0
 --- !u!4 &8274439623149947234 stripped
@@ -724,11 +782,39 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5820234125015345676, guid: e80257fe61045e54895f0c341c1e4ae4, type: 3}
       propertyPath: InitialModule.startSpeed.scalar
-      value: 15
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5820234125015345676, guid: e80257fe61045e54895f0c341c1e4ae4, type: 3}
       propertyPath: CollisionModule.collidesWith.m_Bits
       value: 95
+      objectReference: {fileID: 0}
+    - target: {fileID: 5820234125015345676, guid: e80257fe61045e54895f0c341c1e4ae4, type: 3}
+      propertyPath: InitialModule.startColor.minMaxState
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5820234125015345676, guid: e80257fe61045e54895f0c341c1e4ae4, type: 3}
+      propertyPath: InitialModule.startColor.maxGradient.key0.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5820234125015345676, guid: e80257fe61045e54895f0c341c1e4ae4, type: 3}
+      propertyPath: InitialModule.startColor.maxGradient.key0.g
+      value: 0.29948577
+      objectReference: {fileID: 0}
+    - target: {fileID: 5820234125015345676, guid: e80257fe61045e54895f0c341c1e4ae4, type: 3}
+      propertyPath: InitialModule.startColor.maxGradient.key0.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5820234125015345676, guid: e80257fe61045e54895f0c341c1e4ae4, type: 3}
+      propertyPath: InitialModule.startColor.maxGradient.key1.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5820234125015345676, guid: e80257fe61045e54895f0c341c1e4ae4, type: 3}
+      propertyPath: InitialModule.startColor.maxGradient.key1.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5820234125015345676, guid: e80257fe61045e54895f0c341c1e4ae4, type: 3}
+      propertyPath: InitialModule.startColor.maxGradient.key1.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6726407965605630302, guid: e80257fe61045e54895f0c341c1e4ae4, type: 3}
       propertyPath: m_RootOrder
@@ -796,10 +882,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerPoint: {fileID: 0}
   currentAmmo: 0
-  stats: {fileID: 11400000, guid: 5f8126b2643e0fc4c8e6a390ed7f7466, type: 2}
+  stats: {fileID: 11400000, guid: da08c0b5972eae44a869b98858e9b446, type: 2}
   canFire: 0
   firing: 0
   reloading: 0
+  turret: 0
   shakeTime: 0
   shakeIntensity: 0
 --- !u!4 &7263487436745653272 stripped
@@ -832,11 +919,39 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5820234125015345676, guid: e80257fe61045e54895f0c341c1e4ae4, type: 3}
       propertyPath: InitialModule.startSpeed.scalar
-      value: 15
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5820234125015345676, guid: e80257fe61045e54895f0c341c1e4ae4, type: 3}
       propertyPath: CollisionModule.collidesWith.m_Bits
       value: 95
+      objectReference: {fileID: 0}
+    - target: {fileID: 5820234125015345676, guid: e80257fe61045e54895f0c341c1e4ae4, type: 3}
+      propertyPath: InitialModule.startColor.minMaxState
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5820234125015345676, guid: e80257fe61045e54895f0c341c1e4ae4, type: 3}
+      propertyPath: InitialModule.startColor.maxGradient.key0.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5820234125015345676, guid: e80257fe61045e54895f0c341c1e4ae4, type: 3}
+      propertyPath: InitialModule.startColor.maxGradient.key0.g
+      value: 0.29948577
+      objectReference: {fileID: 0}
+    - target: {fileID: 5820234125015345676, guid: e80257fe61045e54895f0c341c1e4ae4, type: 3}
+      propertyPath: InitialModule.startColor.maxGradient.key0.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5820234125015345676, guid: e80257fe61045e54895f0c341c1e4ae4, type: 3}
+      propertyPath: InitialModule.startColor.maxGradient.key1.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5820234125015345676, guid: e80257fe61045e54895f0c341c1e4ae4, type: 3}
+      propertyPath: InitialModule.startColor.maxGradient.key1.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5820234125015345676, guid: e80257fe61045e54895f0c341c1e4ae4, type: 3}
+      propertyPath: InitialModule.startColor.maxGradient.key1.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6726407965605630302, guid: e80257fe61045e54895f0c341c1e4ae4, type: 3}
       propertyPath: m_RootOrder
@@ -909,9 +1024,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerPoint: {fileID: 0}
   currentAmmo: 0
-  stats: {fileID: 11400000, guid: 5f8126b2643e0fc4c8e6a390ed7f7466, type: 2}
+  stats: {fileID: 11400000, guid: da08c0b5972eae44a869b98858e9b446, type: 2}
   canFire: 0
   firing: 0
   reloading: 0
+  turret: 0
   shakeTime: 0
   shakeIntensity: 0

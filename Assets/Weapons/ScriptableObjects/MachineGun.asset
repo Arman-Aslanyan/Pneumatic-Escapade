@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d8ae65cce187c14e91eefcc9ebd5be1, type: 3}
   m_Name: MachineGun
   m_EditorClassIdentifier: 
-  reloadTime: 0.5
-  gunDamage: 2
-  ammoMax: 100
-  firingSpeed: 0.04
+  reloadTime: 2.3
+  gunDamage: 1
+  ammoMax: 50
+  firingSpeed: 0.06

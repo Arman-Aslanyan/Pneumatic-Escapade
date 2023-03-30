@@ -15,4 +15,4 @@ MonoBehaviour:
   reloadTime: 3
   gunDamage: 1
   ammoMax: 35
-  firingSpeed: 0.3
+  firingSpeed: 0.4

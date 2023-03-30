@@ -867,7 +867,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 10
+      scalar: 20
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -5688,7 +5688,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 10
+      scalar: 20
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -10509,7 +10509,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 10
+      scalar: 20
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -15330,7 +15330,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 10
+      scalar: 20
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -20151,7 +20151,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 10
+      scalar: 20
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -24972,7 +24972,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 10
+      scalar: 20
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -29248,7 +29248,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 32
   m_Sprite: {fileID: -2413806693520163455, guid: 19369ad381349214091a4f59ec1703b1, type: 3}
   m_Color: {r: 0, g: 1, b: 0.68921876, a: 1}
   m_FlipX: 0
@@ -29497,6 +29497,10 @@ PrefabInstance:
       value: 95
       objectReference: {fileID: 0}
     - target: {fileID: 5820234125015345676, guid: e80257fe61045e54895f0c341c1e4ae4, type: 3}
+      propertyPath: InitialModule.startColor.minMaxState
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5820234125015345676, guid: e80257fe61045e54895f0c341c1e4ae4, type: 3}
       propertyPath: InitialModule.startColor.maxGradient.key0.b
       value: 0
       objectReference: {fileID: 0}
@@ -29642,6 +29646,7 @@ MonoBehaviour:
   canFire: 0
   firing: 0
   reloading: 0
+  turret: 0
   shakeTime: 0
   shakeIntensity: 0
 --- !u!4 &6300143842035474015 stripped
@@ -29830,6 +29835,7 @@ MonoBehaviour:
   canFire: 0
   firing: 0
   reloading: 0
+  turret: 0
   shakeTime: 0
   shakeIntensity: 0
 --- !u!1001 &3720971814478096336
@@ -29934,6 +29940,10 @@ PrefabInstance:
     - target: {fileID: 8965798197671065892, guid: caaa987d53cfa6c4b80b05bd3b7cc21b, type: 3}
       propertyPath: CollisionModule.collidesWith.m_Bits
       value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 8965798197671065892, guid: caaa987d53cfa6c4b80b05bd3b7cc21b, type: 3}
+      propertyPath: InitialModule.startColor.minMaxState
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8965798197671065892, guid: caaa987d53cfa6c4b80b05bd3b7cc21b, type: 3}
       propertyPath: InitialModule.startColor.maxGradient.ctime0
@@ -30229,6 +30239,7 @@ MonoBehaviour:
   canFire: 0
   firing: 0
   reloading: 0
+  turret: 0
   shakeTime: 0
   shakeIntensity: 0
 --- !u!4 &4779380930191893926 stripped
@@ -30270,6 +30281,10 @@ PrefabInstance:
     - target: {fileID: 8356561799129503450, guid: 1426781c158992b44b4d5c2eb28836fe, type: 3}
       propertyPath: CollisionModule.collidesWith.m_Bits
       value: 95
+      objectReference: {fileID: 0}
+    - target: {fileID: 8356561799129503450, guid: 1426781c158992b44b4d5c2eb28836fe, type: 3}
+      propertyPath: InitialModule.startColor.minMaxState
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8356561799129503450, guid: 1426781c158992b44b4d5c2eb28836fe, type: 3}
       propertyPath: InitialModule.startColor.maxGradient.key0.b
@@ -30417,6 +30432,7 @@ MonoBehaviour:
   canFire: 0
   firing: 0
   reloading: 0
+  turret: 0
   shakeTime: 0
   shakeIntensity: 0
 --- !u!4 &5604541691074956579 stripped
@@ -30520,6 +30536,10 @@ PrefabInstance:
       value: 95
       objectReference: {fileID: 0}
     - target: {fileID: 7573740631257060983, guid: 71fe7c3b5955c1a4f8d79dc972338169, type: 3}
+      propertyPath: InitialModule.startColor.minMaxState
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7573740631257060983, guid: 71fe7c3b5955c1a4f8d79dc972338169, type: 3}
       propertyPath: InitialModule.startColor.maxGradient.key0.b
       value: 0
       objectReference: {fileID: 0}
@@ -30613,6 +30633,7 @@ MonoBehaviour:
   canFire: 0
   firing: 0
   reloading: 0
+  turret: 0
   shakeTime: 0
   shakeIntensity: 0
 --- !u!4 &6279276465471987295 stripped
@@ -30809,6 +30830,7 @@ MonoBehaviour:
   canFire: 0
   firing: 0
   reloading: 0
+  turret: 0
   shakeTime: 0
   shakeIntensity: 0
 --- !u!1001 &5873395077179043146
@@ -30992,6 +31014,7 @@ MonoBehaviour:
   canFire: 0
   firing: 0
   reloading: 0
+  turret: 0
   shakeTime: 0
   shakeIntensity: 0
 --- !u!1001 &5945410863060482575
@@ -31024,6 +31047,10 @@ PrefabInstance:
     - target: {fileID: 5820234125015345676, guid: e80257fe61045e54895f0c341c1e4ae4, type: 3}
       propertyPath: CollisionModule.collidesWith.m_Bits
       value: 95
+      objectReference: {fileID: 0}
+    - target: {fileID: 5820234125015345676, guid: e80257fe61045e54895f0c341c1e4ae4, type: 3}
+      propertyPath: InitialModule.startColor.minMaxState
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5820234125015345676, guid: e80257fe61045e54895f0c341c1e4ae4, type: 3}
       propertyPath: InitialModule.startColor.maxGradient.key0.b
@@ -31176,6 +31203,7 @@ MonoBehaviour:
   canFire: 0
   firing: 0
   reloading: 0
+  turret: 0
   shakeTime: 0
   shakeIntensity: 0
 --- !u!1001 &6947742931605472171
@@ -31280,6 +31308,10 @@ PrefabInstance:
     - target: {fileID: 8965798197671065892, guid: caaa987d53cfa6c4b80b05bd3b7cc21b, type: 3}
       propertyPath: CollisionModule.collidesWith.m_Bits
       value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 8965798197671065892, guid: caaa987d53cfa6c4b80b05bd3b7cc21b, type: 3}
+      propertyPath: InitialModule.startColor.minMaxState
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8965798197671065892, guid: caaa987d53cfa6c4b80b05bd3b7cc21b, type: 3}
       propertyPath: InitialModule.startColor.maxGradient.ctime0
@@ -31580,5 +31612,6 @@ MonoBehaviour:
   canFire: 0
   firing: 0
   reloading: 0
+  turret: 0
   shakeTime: 0
   shakeIntensity: 0

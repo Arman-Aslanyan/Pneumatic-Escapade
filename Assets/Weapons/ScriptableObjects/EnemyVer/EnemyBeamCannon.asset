@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: EnemyBeamCannon
   m_EditorClassIdentifier: 
   reloadTime: 1
-  gunDamage: 1
+  gunDamage: 0.5
   ammoMax: 20
-  firingSpeed: 0.2
+  firingSpeed: 1

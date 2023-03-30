@@ -271,7 +271,7 @@ MonoBehaviour:
   radius: 0.5
   height: 2
   canMove: 1
-  maxSpeed: 3
+  maxSpeed: 4
   gravity: {x: NaN, y: NaN, z: NaN}
   groundMask:
     serializedVersion: 2
@@ -370,8 +370,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5bd13711183c064f893038a35b36768, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentHP: 10
-  maxHP: 10
+  currentHP: 5
+  maxHP: 5
   HP: {fileID: 4544472573843151680}
   minCoin: 1
   maxCoin: 5
@@ -509,11 +509,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8356561799129503450, guid: 1426781c158992b44b4d5c2eb28836fe, type: 3}
       propertyPath: InitialModule.startSpeed.scalar
-      value: 15
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8356561799129503450, guid: 1426781c158992b44b4d5c2eb28836fe, type: 3}
       propertyPath: CollisionModule.collidesWith.m_Bits
       value: 95
+      objectReference: {fileID: 0}
+    - target: {fileID: 8356561799129503450, guid: 1426781c158992b44b4d5c2eb28836fe, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.9960785
+      objectReference: {fileID: 0}
+    - target: {fileID: 8356561799129503450, guid: 1426781c158992b44b4d5c2eb28836fe, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.70980394
+      objectReference: {fileID: 0}
+    - target: {fileID: 8356561799129503450, guid: 1426781c158992b44b4d5c2eb28836fe, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8356561799129503450, guid: 1426781c158992b44b4d5c2eb28836fe, type: 3}
+      propertyPath: InitialModule.startColor.minMaxState
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9107642802964786568, guid: 1426781c158992b44b4d5c2eb28836fe, type: 3}
       propertyPath: m_RootOrder
@@ -585,6 +601,7 @@ MonoBehaviour:
   canFire: 0
   firing: 0
   reloading: 0
+  turret: 0
   shakeTime: 0
   shakeIntensity: 0
 --- !u!4 &9107642801051735781 stripped

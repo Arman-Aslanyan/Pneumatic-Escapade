@@ -271,7 +271,7 @@ MonoBehaviour:
   radius: 0.5
   height: 2
   canMove: 1
-  maxSpeed: 3
+  maxSpeed: 2
   gravity: {x: NaN, y: NaN, z: NaN}
   groundMask:
     serializedVersion: 2
@@ -557,11 +557,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7573740631257060983, guid: 71fe7c3b5955c1a4f8d79dc972338169, type: 3}
       propertyPath: InitialModule.startSpeed.scalar
-      value: 30
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7573740631257060983, guid: 71fe7c3b5955c1a4f8d79dc972338169, type: 3}
       propertyPath: CollisionModule.collidesWith.m_Bits
       value: 95
+      objectReference: {fileID: 0}
+    - target: {fileID: 7573740631257060983, guid: 71fe7c3b5955c1a4f8d79dc972338169, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.054901965
+      objectReference: {fileID: 0}
+    - target: {fileID: 7573740631257060983, guid: 71fe7c3b5955c1a4f8d79dc972338169, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.3529412
+      objectReference: {fileID: 0}
+    - target: {fileID: 7573740631257060983, guid: 71fe7c3b5955c1a4f8d79dc972338169, type: 3}
+      propertyPath: InitialModule.startColor.minMaxState
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7573740631257060983, guid: 71fe7c3b5955c1a4f8d79dc972338169, type: 3}
       propertyPath: EmissionModule.m_Bursts.Array.data[0].countCurve.scalar
@@ -598,5 +610,6 @@ MonoBehaviour:
   canFire: 0
   firing: 0
   reloading: 0
+  turret: 0
   shakeTime: 0
   shakeIntensity: 0
