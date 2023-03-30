@@ -17,6 +17,7 @@ public class RollItem : MonoBehaviour
     [Range(0, 1)] public float mythical_Roll = 0.075f;
 
     private Vector3 playerPos;
+    private Inventory inventory;
 
     private void Start()
     {
@@ -34,6 +35,7 @@ public class RollItem : MonoBehaviour
         }
 
         playerPos = FindObjectOfType<PlayerMovement>().transform.position;
+        inventory = FindObjectOfType<Inventory>();
     }
 
     private void Update()
@@ -67,13 +69,13 @@ public class RollItem : MonoBehaviour
         {
             print("Elite");
             int randInt = Random.Range(0, Legendary_Items.Count);
-            Legendary_Items[randInt].OnPickUp();
+            Elite_Items[randInt].OnPickUp();
         }
         else// if (rand >= 1 - common_Roll)
         {
             print("Common");
             int randInt = Random.Range(0, Common_Items.Count);
-            Common_Items[randInt].OnPickUp();
+            Common_Items[0].OnPickUp();
         }
     }
 }

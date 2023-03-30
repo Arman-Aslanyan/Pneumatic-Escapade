@@ -71,6 +71,7 @@ GameObject:
   - component: {fileID: 3679117581205412127}
   - component: {fileID: 1963298572}
   - component: {fileID: 1963298571}
+  - component: {fileID: 5412153703505595676}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -5038,6 +5039,26 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
+--- !u!95 &5412153703505595676
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7032620300620519818}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b0024d82a9451a64e84366025e49f409, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &43712635
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -123,4 +123,5 @@ MonoBehaviour:
   playerMovement: {fileID: 0}
   inventory: {fileID: 0}
   rarity: 2
+  name: Invigorating Elixir
   InEffect: 0

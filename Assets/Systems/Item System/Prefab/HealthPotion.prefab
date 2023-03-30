@@ -123,5 +123,6 @@ MonoBehaviour:
   playerMovement: {fileID: 0}
   inventory: {fileID: 0}
   rarity: 0
+  name: Health Potion
   heal_LowerLim: 15
   heal_UpperLim: 30

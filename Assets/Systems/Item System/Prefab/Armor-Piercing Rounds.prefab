@@ -123,3 +123,4 @@ MonoBehaviour:
   playerMovement: {fileID: 0}
   inventory: {fileID: 0}
   rarity: 1
+  name: Armor-Piercing Rounds

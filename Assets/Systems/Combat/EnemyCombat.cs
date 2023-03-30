@@ -77,6 +77,8 @@ public class EnemyCombat : MonoBehaviour
             float dropItem = Random.Range(0, 1);
             if (dropItem >= 0.2f)
                 FindObjectOfType<RollItem>().Gamble();
+            if (spEn.bossCount == 0)
+                FindObjectOfType<GameManager>().EndGame("YOU WON");
         }
         Destroy(gameObject);
     }

@@ -9,7 +9,8 @@ public class LevelLoader : MonoBehaviour
     public static event Change TimeChanged;
     [SerializeField] private string nextScene; //The scene that should be loaded next
     private float waitTime = 1 / 0.75f; //How long to wait until scene transition
-    private ScreenTransition screenTransition;
+    internal ScreenTransition screenTransition;
+    private Canvas canvas;
 
     public static LevelLoader Instance;
 
@@ -27,6 +28,10 @@ public class LevelLoader : MonoBehaviour
     private void Start()
     {
         screenTransition = GetComponentInChildren<ScreenTransition>();
+        canvas = GetComponentInChildren<Canvas>();
+
+        canvas.sortingOrder = 100;
+        StartCoroutine(WaitToCommitJank());
     }
 
     //Used for debugging, works perfectly
@@ -38,6 +43,7 @@ public class LevelLoader : MonoBehaviour
 
     public void LoadLevel(string nextScene)
     {
+        canvas.sortingOrder = 100;
         this.nextScene = nextScene;
         screenTransition.StartTransition("CrossFade");
         StartCoroutine(TimeChangedScene());
@@ -55,6 +61,7 @@ public class LevelLoader : MonoBehaviour
     void ChangeScene()
     {
         SceneManager.LoadScene(nextScene);
+        canvas.sortingOrder = 0;
         screenTransition.EndTransition("CrossFade");
     }
 
@@ -66,5 +73,11 @@ public class LevelLoader : MonoBehaviour
     void OnDisable()
     {
         TimeChanged -= ChangeScene;
+    }
+
+    private IEnumerator WaitToCommitJank()
+    {
+        yield return new WaitForSeconds(waitTime);
+        canvas.sortingOrder = 0;
     }
 }

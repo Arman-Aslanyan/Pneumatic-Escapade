@@ -123,4 +123,5 @@ MonoBehaviour:
   playerMovement: {fileID: 0}
   inventory: {fileID: 0}
   rarity: 3
+  name: Expired Medkit
   InEffect: 0

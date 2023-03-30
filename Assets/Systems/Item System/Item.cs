@@ -19,6 +19,7 @@ public class Item : MonoBehaviour
     [HideInInspector] public Inventory inventory;
 
     public Rarity rarity;
+    public new string name;
 
     private void Start()
     {
@@ -44,7 +45,7 @@ public class Item : MonoBehaviour
                 inventory._items.Add(this);
             ++stacks;
             proc = true;
-            GetComponent<SpriteRenderer>().forceRenderingOff = true;
+            inventory.ShoutAcquiredItem(name + $"[{stacks}]");
         }
         GetComponent<Collider2D>().enabled = false;
     }

@@ -20,7 +20,8 @@ public class PlayerMovement : MonoBehaviour
     public ParticleSystem iFrameSmoke;
 
     internal Combat combat;
-    //private Animator animator;
+    private Animator animator;
+    private SpriteRenderer spRend;
 
     public static PlayerMovement Instance;
 
@@ -40,7 +41,8 @@ public class PlayerMovement : MonoBehaviour
     {
         combat = GetComponent<Combat>();
         rb = GetComponent<Rigidbody2D>();
-        //animator = GetComponent<Animator>();
+        animator = GetComponent<Animator>();
+        spRend = GetComponent<SpriteRenderer>();
     }
 
     // Update called once per frame
@@ -80,9 +82,14 @@ public class PlayerMovement : MonoBehaviour
                 coroutineInstance = StartCoroutine(DashCooldown());
         }
 
-        //animator.SetFloat("Horizontal", movement.x);
-        //animator.SetFloat("Vertical", movement.y);
-        //animator.SetFloat("Speed", movement.sqrMagnitude);
+        if (movement != Vector2.zero)
+        {
+            animator.SetTrigger("Walk");
+        }
+        else animator.SetTrigger("Idle");
+        if (movement.x < 0)
+            spRend.flipX = true;
+        else spRend.flipX = false;
     }
 
     private IEnumerator DashCooldown()

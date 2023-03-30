@@ -17,7 +17,7 @@ public class Inventory : MonoBehaviour
     public void ShoutAcquiredItem(string item)
     {
         ItemLog.text += $"You acquired \"{item}\"\n";
-        StartCoroutine(WaitToClearLog());
+        StartCoroutine(WaitToClearLog($"You acquired \"{item}\"\n"));
     }
 
     //Only removes one of the type for some reason, but that also works out
@@ -32,9 +32,10 @@ public class Inventory : MonoBehaviour
         }
     }
 
-    private IEnumerator WaitToClearLog()
+    private IEnumerator WaitToClearLog(string line)
     {
         yield return new WaitForSeconds(3.5f);
+        ItemLog.text = ItemLog.text.Remove(0, line.Length);
     }
     
     private void OnTriggerEnter2D(Collider2D other)
