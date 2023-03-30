@@ -34,16 +34,10 @@ public class LevelLoader : MonoBehaviour
         StartCoroutine(WaitToCommitJank());
     }
 
-    //Used for debugging, works perfectly
-    /*private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.K))
-            LoadLevel("Arman's Scene");
-    }*/
-
     public void LoadLevel(string nextScene)
     {
-        canvas.sortingOrder = 100;
+        if (!SceneManager.GetActiveScene().name.Equals("Menu"))
+            canvas.sortingOrder = 100;
         this.nextScene = nextScene;
         screenTransition.StartTransition("CrossFade");
         StartCoroutine(TimeChangedScene());
