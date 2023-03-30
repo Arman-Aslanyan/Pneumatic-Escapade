@@ -23,17 +23,11 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         coin.text = ("Coins: " + coins);
-
-        //QoL dev debugging
-        if (Input.GetKeyDown(KeyCode.R))
-            LevelLoader.Instance.LoadLevel("Menu");
     }
 
-    public void EndGame(string gameOver)
+    public void EndGame()
     {
-        FinalUI.enabled = true;
-        GameOver.text = gameOver;
-        Restart.enabled = true;
+        LevelLoader.Instance.LoadLevel("GameOver");
     }
 
     public void RestartGame()

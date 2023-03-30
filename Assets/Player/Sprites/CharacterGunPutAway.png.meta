@@ -119,12 +119,12 @@ TextureImporter:
       name: CharacterGunPutAway_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 512
-        width: 256
-        height: 256
+        x: 16
+        y: 517
+        width: 105
+        height: 233
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -140,18 +140,18 @@ TextureImporter:
       name: CharacterGunPutAway_1
       rect:
         serializedVersion: 2
-        x: 256
-        y: 512
-        width: 256
-        height: 256
+        x: 274
+        y: 517
+        width: 105
+        height: 233
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 83353ba8db27e7b4089f64a9a30236fd
+      spriteID: 64c62958d849e584f970f8f1e9a68132
       internalID: -1022684905
       vertices: []
       indices: 
@@ -161,18 +161,18 @@ TextureImporter:
       name: CharacterGunPutAway_2
       rect:
         serializedVersion: 2
-        x: 512
-        y: 512
-        width: 256
-        height: 256
+        x: 529
+        y: 517
+        width: 105
+        height: 233
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 829ebe7f07e0f2c40bca0c1887808a8b
+      spriteID: 4d1b6be4add6d04449f9d7c76df977f0
       internalID: 604151792
       vertices: []
       indices: 
@@ -182,18 +182,18 @@ TextureImporter:
       name: CharacterGunPutAway_3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 256
-        width: 256
-        height: 256
+        x: 16
+        y: 5
+        width: 105
+        height: 233
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: caba8ed18d530bf449b4b4670ae5940b
+      spriteID: 43642d8acba13da4cb2c736519709907
       internalID: -1794749408
       vertices: []
       indices: 
@@ -203,18 +203,18 @@ TextureImporter:
       name: CharacterGunPutAway_4
       rect:
         serializedVersion: 2
-        x: 256
-        y: 256
-        width: 256
-        height: 256
+        x: 274
+        y: 5
+        width: 105
+        height: 233
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 690120e9802db2d4d9ed5e66b7b394ee
+      spriteID: b44119a13f87e0a4a8fd44671e75edea
       internalID: 620016604
       vertices: []
       indices: 
@@ -224,18 +224,18 @@ TextureImporter:
       name: CharacterGunPutAway_5
       rect:
         serializedVersion: 2
-        x: 512
-        y: 256
-        width: 256
-        height: 256
+        x: 16
+        y: 261
+        width: 105
+        height: 233
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3bc705043656ced47a83e2749387e5ed
+      spriteID: db67bc08f0c5a344689314c9ca041caf
       internalID: 1463923806
       vertices: []
       indices: 
@@ -245,18 +245,18 @@ TextureImporter:
       name: CharacterGunPutAway_6
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 256
-        height: 256
+        x: 274
+        y: 261
+        width: 105
+        height: 233
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 54dd929db236ccf42879fff21cf7f624
+      spriteID: 0709b5213b4eb0d48906f8350fe6871c
       internalID: 395819233
       vertices: []
       indices: 
@@ -266,18 +266,18 @@ TextureImporter:
       name: CharacterGunPutAway_7
       rect:
         serializedVersion: 2
-        x: 256
-        y: 0
-        width: 256
-        height: 256
+        x: 529
+        y: 261
+        width: 105
+        height: 233
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b7f08e610bb54b646a568f95529a0e5e
+      spriteID: 6a4167c4b75398248ab270390c08fdf1
       internalID: -1553459708
       vertices: []
       indices: 

@@ -42,10 +42,6 @@ public class RollItem : MonoBehaviour
     {
         //Follow the player
         transform.position = playerPos;
-
-        //Debug purposes
-        if (Input.GetKeyDown(KeyCode.J))
-            Gamble();
     }
 
     public void Gamble()
