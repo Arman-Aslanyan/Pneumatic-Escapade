@@ -33,6 +33,18 @@ public class EnemyCombat : MonoBehaviour
         Instantiate(spawnEffect, transform.position, transform.rotation);
     }
 
+    public void Update()
+    {
+        if (currentHP <= 0)
+        {
+            currentHP = 0;
+        }
+        if (currentHP <= 0)
+        {
+            Death();
+        }
+    }
+
     public virtual void TakeDamage(float Damage)
     {
         //Item functionality
@@ -46,10 +58,6 @@ public class EnemyCombat : MonoBehaviour
         currentHP -= Damage;
         HP.text = ("HP: " + currentHP);
 
-        if (currentHP <= 0)
-        {
-            Death();
-        }
     }
 
     public virtual void Death()
