@@ -119,12 +119,12 @@ TextureImporter:
       name: CharacterGunShoot_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 512
-        width: 256
-        height: 256
+        x: 16
+        y: 517
+        width: 105
+        height: 233
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -140,18 +140,18 @@ TextureImporter:
       name: CharacterGunShoot_1
       rect:
         serializedVersion: 2
-        x: 256
-        y: 512
-        width: 256
-        height: 256
+        x: 274
+        y: 517
+        width: 105
+        height: 233
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 82b25c918845ba8458aec38abff30281
+      spriteID: d5b3c31ba06e7e648b3c8f9a6b78906a
       internalID: -173806790
       vertices: []
       indices: 
@@ -161,18 +161,18 @@ TextureImporter:
       name: CharacterGunShoot_2
       rect:
         serializedVersion: 2
-        x: 512
-        y: 512
-        width: 256
-        height: 256
+        x: 529
+        y: 517
+        width: 105
+        height: 233
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4dee5ee9857841a448b20092eb785f2a
+      spriteID: b393c0f7cd3119741b109e29e93b639a
       internalID: -2001117706
       vertices: []
       indices: 
@@ -182,18 +182,18 @@ TextureImporter:
       name: CharacterGunShoot_3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 256
-        width: 256
-        height: 256
+        x: 16
+        y: 261
+        width: 105
+        height: 233
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6e901caec6d2e4b46a39ebd9e4a7e2e0
+      spriteID: 0655901469c41b549b775209b226aab6
       internalID: 1893113090
       vertices: []
       indices: 
@@ -203,18 +203,18 @@ TextureImporter:
       name: CharacterGunShoot_4
       rect:
         serializedVersion: 2
-        x: 256
-        y: 256
-        width: 256
-        height: 256
+        x: 274
+        y: 261
+        width: 105
+        height: 233
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3c97e5c68a1454a4491478dde356bf11
+      spriteID: 496fd0339d88ce24daede254efc82a14
       internalID: 1986767125
       vertices: []
       indices: 
@@ -224,18 +224,18 @@ TextureImporter:
       name: CharacterGunShoot_5
       rect:
         serializedVersion: 2
-        x: 512
-        y: 256
-        width: 256
-        height: 256
+        x: 529
+        y: 261
+        width: 105
+        height: 233
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 571358d8707de5245873bdee4c418ad5
+      spriteID: 447129d9245d4c245852bbd2b05a64f9
       internalID: -395277701
       vertices: []
       indices: 
@@ -245,18 +245,18 @@ TextureImporter:
       name: CharacterGunShoot_6
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 256
-        height: 256
+        x: 16
+        y: 5
+        width: 105
+        height: 233
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f6b7fccb7f2f2ed4a9123346b59ecf85
+      spriteID: 5e705d08ede6c8f489c44e7913cf57e8
       internalID: 1557701789
       vertices: []
       indices: 
@@ -266,18 +266,18 @@ TextureImporter:
       name: CharacterGunShoot_7
       rect:
         serializedVersion: 2
-        x: 256
-        y: 0
-        width: 256
-        height: 256
+        x: 274
+        y: 5
+        width: 105
+        height: 233
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 084999003c07c1643963a2a4bee1b811
+      spriteID: 25e8c73ad9e77d844b1d328cf243904a
       internalID: 417646607
       vertices: []
       indices: 

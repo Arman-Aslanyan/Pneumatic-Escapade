@@ -29,11 +29,9 @@ public class GameManager : MonoBehaviour
             LevelLoader.Instance.LoadLevel("Menu");
     }
 
-    public void EndGame(string gameOver)
+    public void EndGame()
     {
-        FinalUI.enabled = true;
-        GameOver.text = gameOver;
-        Restart.enabled = true;
+        LevelLoader.Instance.LoadLevel("GameOver");
     }
 
     public void RestartGame()

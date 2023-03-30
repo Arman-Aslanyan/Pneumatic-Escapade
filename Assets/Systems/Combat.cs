@@ -40,7 +40,7 @@ public class Combat : MonoBehaviour
 
     public virtual void Death()
     {
-        FindObjectOfType<GameManager>().EndGame("Game Over");
+        FindObjectOfType<GameManager>().EndGame();
     }
 
     public virtual void SetI_Frames(bool enableI_Frames)
@@ -54,5 +54,6 @@ public class Combat : MonoBehaviour
         currentHP += healAmount;
         if (currentHP > maxHP)
             currentHP = maxHP;
+        HP.text = ("HP: " + currentHP);
     }
 }

@@ -17,6 +17,7 @@ public class HealthPotion : Consumable
             ++stacks;
             GetComponent<SpriteRenderer>().forceRenderingOff = true;
             GetComponent<Collider2D>().enabled = false;
+            inventory.ShoutAcquiredItem(name + $"[{stacks}]");
         }
     }
 
