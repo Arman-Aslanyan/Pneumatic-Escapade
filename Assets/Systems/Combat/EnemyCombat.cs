@@ -45,7 +45,7 @@ public class EnemyCombat : MonoBehaviour
         {
             Death();
         }
-        //transform.LookAt(playerPoint);
+        //transform.LookAt(pla);
     }
 
     public virtual void TakeDamage(float Damage)
