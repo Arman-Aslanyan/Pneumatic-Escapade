@@ -14715,6 +14715,7 @@ GameObject:
   - component: {fileID: 6780384169559176939}
   - component: {fileID: 6780384169559176938}
   - component: {fileID: 8802516967339773049}
+  - component: {fileID: -301564425905767733}
   m_Layer: 8
   m_Name: Super Machinegunner
   m_TagString: Untagged
@@ -14920,7 +14921,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.28, y: 1.28}
+    oldSize: {x: 1.2777778, y: 1.2555555}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -14950,6 +14951,27 @@ MonoBehaviour:
   sE: {fileID: 0}
   spawnEffect: {fileID: 7815057208917191966, guid: 771e328d74d83d14e913f905f69abf0e, type: 3}
   spEn: {fileID: 0}
+  playerPoint: {fileID: 0}
+--- !u!95 &-301564425905767733
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6780384169559176932}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3ba265deab8c329479deba0be3faac89, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &7658945905645676928
 GameObject:
   m_ObjectHideFlags: 0
