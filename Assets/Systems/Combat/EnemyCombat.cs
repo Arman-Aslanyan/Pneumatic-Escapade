@@ -18,6 +18,7 @@ public class EnemyCombat : MonoBehaviour
     public SpawnEnemies sE;
     public GameObject spawnEffect;
     public SpawnEnemies spEn;
+    public Transform playerPoint;
 
 
 
@@ -28,6 +29,7 @@ public class EnemyCombat : MonoBehaviour
         HP.text = (" ");
         gM = FindObjectOfType<GameManager>();
         sE = FindObjectOfType<SpawnEnemies>();
+        playerPoint = GameObject.FindGameObjectWithTag("Player").transform;
 
         GetComponent<AIDestinationSetter>().target = GameObject.FindGameObjectWithTag("Player").transform;
         Instantiate(spawnEffect, transform.position, transform.rotation);
@@ -43,6 +45,7 @@ public class EnemyCombat : MonoBehaviour
         {
             Death();
         }
+        //transform.LookAt(playerPoint);
     }
 
     public virtual void TakeDamage(float Damage)
