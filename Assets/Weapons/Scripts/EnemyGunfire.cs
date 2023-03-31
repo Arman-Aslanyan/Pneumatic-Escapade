@@ -64,7 +64,8 @@ public class EnemyGunfire : MonoBehaviour
         firing = true;
 
         Bullet.Play();
-        CinemachineShake.Instance.ShakeCamera(shakeIntensity, shakeTime);
+        if (!CompareTag("ForTutorial"))
+            CinemachineShake.Instance.ShakeCamera(shakeIntensity, shakeTime);
 
         currentAmmo--;
         Invoke("ResetShoot", stats.firingSpeed);

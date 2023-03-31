@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2034522792295193084}
   m_Layer: 3
   m_Name: Beam
-  m_TagString: Untagged
+  m_TagString: ForTutorial
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4827,12 +4827,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Attack: 323
+  Attack2: 0
   reload: 114
   currentAmmo: 0
-  spark: {fileID: 7815057208917191966, guid: 771e328d74d83d14e913f905f69abf0e, type: 3}
   stats: {fileID: 11400000, guid: 86156d8a317e2974397a40d20f7b4e52, type: 2}
-  flash: {fileID: 7815057208917191966, guid: 771e328d74d83d14e913f905f69abf0e, type: 3}
+  shakeTime: 0
+  shakeIntensity: 0
   canFire: 0
   firing: 0
   reloading: 0
+  ammoRemaining: {fileID: 0}
   rotationSpeed: 500

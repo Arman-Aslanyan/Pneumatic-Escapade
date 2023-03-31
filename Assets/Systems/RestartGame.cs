@@ -8,4 +8,15 @@ public class RestartGame : MonoBehaviour
     {
         LevelLoader.Instance.LoadLevel("Main");
     }
+
+    public void GoToMenu()
+    {
+        LevelLoader.Instance.LoadLevel("Menu");
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Player") && gameObject.name == "GoToMenu")
+            GoToMenu();
+    }
 }
