@@ -6,6 +6,11 @@ using TMPro;
 [RequireComponent(typeof(PlayerMovement))]
 public class Inventory : MonoBehaviour
 {
+    public Color common;
+    public Color Elite;
+    public Color Legendary;
+    public Color Mythical;
+
     [SerializeField] private int capacity = 0;
     [SerializeField] private List<Item> items = new List<Item>();
     public TMP_Text ItemLog;
