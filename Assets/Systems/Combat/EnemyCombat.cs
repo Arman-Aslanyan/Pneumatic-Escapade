@@ -21,7 +21,6 @@ public class EnemyCombat : MonoBehaviour
     public Transform playerPoint;
 
 
-
     // Start is called before the first frame update
     void Start()
     {
@@ -40,9 +39,6 @@ public class EnemyCombat : MonoBehaviour
         if (currentHP <= 0)
         {
             currentHP = 0;
-        }
-        if (currentHP <= 0)
-        {
             Death();
         }
         //transform.LookAt(pla);
@@ -60,7 +56,6 @@ public class EnemyCombat : MonoBehaviour
         }
         currentHP -= Damage;
         HP.text = ("HP: " + currentHP);
-
     }
 
     public virtual void Death()

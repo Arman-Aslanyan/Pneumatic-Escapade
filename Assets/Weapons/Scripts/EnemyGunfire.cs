@@ -19,6 +19,10 @@ public class EnemyGunfire : MonoBehaviour
     public float shakeTime;
     public float shakeIntensity;
 
+    //For animations
+    private Animator animator;
+    private Rigidbody2D rb;
+
     List<ParticleCollisionEvent> colEvents = new List<ParticleCollisionEvent>();
     private void Start()
     {
@@ -29,6 +33,10 @@ public class EnemyGunfire : MonoBehaviour
         playerPoint = GameObject.FindGameObjectWithTag("Player").transform;
 
         currentAmmo = stats.ammoMax;
+
+        rb = GetComponentInParent<Rigidbody2D>();
+        animator = GetComponentInParent<Animator>();
+        animator.SetTrigger("Walk");
     }
     private void Update()
     {
@@ -45,7 +53,6 @@ public class EnemyGunfire : MonoBehaviour
         {
             transform.LookAt(playerPoint);
         }
-
     }
 
     private void OnParticleCollision(GameObject other)

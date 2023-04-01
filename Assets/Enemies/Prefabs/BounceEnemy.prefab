@@ -151,6 +151,7 @@ GameObject:
   - component: {fileID: 8411143270876031466}
   - component: {fileID: 8411143270876031467}
   - component: {fileID: 5803578392843965304}
+  - component: {fileID: 5934933562187402014}
   m_Layer: 8
   m_Name: BounceEnemy
   m_TagString: Untagged
@@ -349,7 +350,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.56, y: 2.56}
+    oldSize: {x: 1.4555556, y: 2.1666667}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -379,6 +380,27 @@ MonoBehaviour:
   sE: {fileID: 0}
   spawnEffect: {fileID: 7815057208917191966, guid: 771e328d74d83d14e913f905f69abf0e, type: 3}
   spEn: {fileID: 0}
+  playerPoint: {fileID: 0}
+--- !u!95 &5934933562187402014
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8411143270876031461}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b0abf5a1ace43bc4f8fdca4ec04f059f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &9092213051771452969
 GameObject:
   m_ObjectHideFlags: 0

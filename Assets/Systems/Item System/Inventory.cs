@@ -13,11 +13,16 @@ public class Inventory : MonoBehaviour
 
     [SerializeField] private int capacity = 0;
     [SerializeField] private List<Item> items = new List<Item>();
-    public TMP_Text ItemLog;
+    private TMP_Text ItemLog;
 
     //public versions of the variables for reference
     public int _capacity { get => capacity; }
     public List<Item> _items { get => items; }
+
+    private void Start()
+    {
+        ItemLog = GameObject.Find("ItemLogging").GetComponent<TMP_Text>();
+    }
 
     public void ShoutAcquiredItem(string item)
     {

@@ -8,16 +8,6 @@ public class GameManager : MonoBehaviour
 {
     public int coins;
     public TMP_Text coin;
-    public Canvas FinalUI;
-    public TMP_Text GameOver;
-    public Button Restart;
-
-    private void Start()
-    {
-        Restart.enabled = false;
-        GameOver.text = "";
-        FinalUI.enabled = false;
-    }
 
     // Update is called once per frame
     void Update()

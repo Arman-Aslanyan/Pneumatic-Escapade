@@ -71,7 +71,7 @@ public class RollItem : MonoBehaviour
         {
             print("Common");
             int randInt = Random.Range(0, Common_Items.Count);
-            Common_Items[0].OnPickUp();
+            Common_Items[randInt].OnPickUp();
         }
     }
 }
