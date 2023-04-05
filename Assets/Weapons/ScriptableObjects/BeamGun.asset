@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: BeamGun
   m_EditorClassIdentifier: 
   reloadTime: 4
-  gunDamage: 0.5
+  gunDamage: 1
   ammoMax: 100
   firingSpeed: 0.01

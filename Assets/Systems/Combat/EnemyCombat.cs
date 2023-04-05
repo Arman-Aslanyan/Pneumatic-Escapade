@@ -10,12 +10,14 @@ public class EnemyCombat : MonoBehaviour
     public float maxHP;
     public TMP_Text HP;
     private GameManager gM;
+    public bool doesDeactivate;
+    public SealedGateControl sGC;
+    public GameObject setAct;
 
     public int minCoin;
     public int maxCoin;
     public bool isBoss;
 
-    public SpawnEnemies sE;
     public GameObject spawnEffect;
     public SpawnEnemies spEn;
     public Transform playerPoint;
@@ -25,12 +27,18 @@ public class EnemyCombat : MonoBehaviour
     void Start()
     {
         spEn = FindObjectOfType<SpawnEnemies>();
-        HP.text = (" ");
+        //sGC = FindObjectOfType<SealedGateControl>();
+        if (HP != null)
+        {
+            HP.text = (" ");
+        }
         gM = FindObjectOfType<GameManager>();
-        sE = FindObjectOfType<SpawnEnemies>();
         playerPoint = GameObject.FindGameObjectWithTag("Player").transform;
-
-        GetComponent<AIDestinationSetter>().target = GameObject.FindGameObjectWithTag("Player").transform;
+        sGC = FindObjectOfType<SealedGateControl>();
+        if (doesDeactivate == false)
+        {
+            GetComponent<AIDestinationSetter>().target = GameObject.FindGameObjectWithTag("Player").transform;
+        }
         Instantiate(spawnEffect, transform.position, transform.rotation);
     }
 
@@ -55,34 +63,38 @@ public class EnemyCombat : MonoBehaviour
                 Damage *= 2;
         }
         currentHP -= Damage;
-        HP.text = ("HP: " + currentHP);
+        if(HP != null)
+        {
+            HP.text = ("HP: " + currentHP);
+        }
     }
 
     public virtual void Death()
     {
-        if (sE != null)
+        if (spEn != null)
         {
-            sE.encountersSpawned--;
+            spEn.encountersSpawned--;
         }
         int dropcoin = Random.Range(minCoin, maxCoin);
         gM.GetCoins(dropcoin);
 
 
         //Should the enemy drop an item on death?
-        if (isBoss == false)
+        if (isBoss == false && doesDeactivate == false)
         {
-            if (sE != null)
-            { 
-                sE.enemyCount--;
+            if (spEn != null)
+            {
+                spEn.enemyCount--;
             }
             float dropItem = Random.Range(0, 1);
             if (dropItem >= 0f)
             {
                 print("Item has been dropped");
                 FindObjectOfType<RollItem>().Gamble();
+                Destroy(gameObject);
             }
         }
-        if (isBoss == true)
+        if (isBoss == true && doesDeactivate == false)
         {
             spEn.bossCount--;
             spEn.bossAlert.SetActive(false);
@@ -91,7 +103,13 @@ public class EnemyCombat : MonoBehaviour
                 FindObjectOfType<RollItem>().Gamble();
             if (spEn.bossCount == 0)
                 FindObjectOfType<GameManager>().EndGame();
+            Destroy(gameObject);
         }
-        Destroy(gameObject);
+        if(doesDeactivate == true)
+        {
+            sGC.Unseal();
+            setAct.SetActive(true);
+            gameObject.SetActive(false);
+        }
     }
 }
