@@ -12,6 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d8ae65cce187c14e91eefcc9ebd5be1, type: 3}
   m_Name: TurretBeams
   m_EditorClassIdentifier: 
+  startReloadTime: 0
+  startGunDamage: 5
+  startAmmoMax: 5
+  startFiringSpeed: 0.1
   reloadTime: 0
   gunDamage: 5
   ammoMax: 5

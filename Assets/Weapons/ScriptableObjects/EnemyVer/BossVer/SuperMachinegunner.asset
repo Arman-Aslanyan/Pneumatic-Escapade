@@ -12,7 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d8ae65cce187c14e91eefcc9ebd5be1, type: 3}
   m_Name: SuperMachinegunner
   m_EditorClassIdentifier: 
+  startReloadTime: 2
+  startGunDamage: 2
+  startAmmoMax: 100
+  startFiringSpeed: 0.1
   reloadTime: 2
   gunDamage: 2
-  ammoMax: 50
-  firingSpeed: 0.2
+  ammoMax: 100
+  firingSpeed: 0.1

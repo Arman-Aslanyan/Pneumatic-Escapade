@@ -12,7 +12,7 @@ public class JarOfJelly : Item
         if (proc)
         {
             foreach (ParticleGuns weapon in Weapons)
-                weapon.stats.reloadTime *= 1.05f;
+                weapon.stats.reloadTime /= 1.05f;
             proc = false;
         }
     }

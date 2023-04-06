@@ -29098,7 +29098,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0.38, y: 1.3}
+  m_AnchoredPosition: {x: 0.38, y: 2.06}
   m_SizeDelta: {x: 5.6419, y: 1.8492}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &6430409431505381873
@@ -29179,6 +29179,7 @@ GameObject:
   - component: {fileID: 7907000830029370541}
   - component: {fileID: 5299433486010936894}
   - component: {fileID: 1271479074523003572}
+  - component: {fileID: 7796719076610234797}
   m_Layer: 8
   m_Name: copy
   m_TagString: Untagged
@@ -29408,7 +29409,7 @@ MonoBehaviour:
   maxHP: 500
   HP: {fileID: 2742719503296636422}
   doesDeactivate: 0
-  sGC: {fileID: 0}
+  sGC: {fileID: 7796719076610234797}
   setAct: {fileID: 0}
   minCoin: 300
   maxCoin: 300
@@ -29436,6 +29437,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &7796719076610234797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7907000830029370531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a8c037d37ab7aa46a3b7560b5a18753, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gate: {fileID: 9118674359083706310}
 --- !u!1 &9118674359083706310
 GameObject:
   m_ObjectHideFlags: 0

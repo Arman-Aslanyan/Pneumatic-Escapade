@@ -12,7 +12,7 @@ public class HastyReagent : Item
         if (proc)
         {
             foreach (ParticleGuns weapon in Weapons)
-                weapon.stats.firingSpeed *= 1.015f;
+                weapon.stats.firingSpeed /= 1.015f;
             proc = false;
         }
     }

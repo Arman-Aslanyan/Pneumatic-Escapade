@@ -13,6 +13,7 @@ public class EnemyCombat : MonoBehaviour
     public bool doesDeactivate;
     public SealedGateControl sGC;
     public GameObject setAct;
+    public bool lvlBoss;
 
     public int minCoin;
     public int maxCoin;
@@ -27,6 +28,7 @@ public class EnemyCombat : MonoBehaviour
     void Start()
     {
         spEn = FindObjectOfType<SpawnEnemies>();
+
         //sGC = FindObjectOfType<SealedGateControl>();
         if (HP != null)
         {
@@ -96,13 +98,22 @@ public class EnemyCombat : MonoBehaviour
         }
         if (isBoss == true && doesDeactivate == false)
         {
-            spEn.bossCount--;
-            spEn.bossAlert.SetActive(false);
+            if (spEn != null)
+            {
+                spEn.bossAlert.SetActive(false);
+            }
+
             float dropItem = Random.Range(0, 1);
             if (dropItem >= 0.2f)
+            {
                 FindObjectOfType<RollItem>().Gamble();
-            if (spEn.bossCount == 0)
+            }
+
+            if (lvlBoss == true)
+            {
                 FindObjectOfType<GameManager>().EndGame();
+            }
+
             Destroy(gameObject);
         }
         if(doesDeactivate == true)

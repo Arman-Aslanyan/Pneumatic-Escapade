@@ -12,6 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d8ae65cce187c14e91eefcc9ebd5be1, type: 3}
   m_Name: EnemyMachineGun
   m_EditorClassIdentifier: 
+  startReloadTime: 3
+  startGunDamage: 1
+  startAmmoMax: 35
+  startFiringSpeed: 0.4
   reloadTime: 3
   gunDamage: 1
   ammoMax: 35

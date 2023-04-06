@@ -12,6 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d8ae65cce187c14e91eefcc9ebd5be1, type: 3}
   m_Name: RPG
   m_EditorClassIdentifier: 
+  startReloadTime: 5
+  startGunDamage: 30
+  startAmmoMax: 2
+  startFiringSpeed: 1
   reloadTime: 5
   gunDamage: 30
   ammoMax: 2

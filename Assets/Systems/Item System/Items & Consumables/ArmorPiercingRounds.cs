@@ -12,7 +12,7 @@ public class ArmorPiercingRounds : Item
         if (proc)
         {
             foreach (ParticleGuns weapon in Weapons)
-                weapon.stats.gunDamage *= 1.15f;
+                weapon.stats.gunDamage += 0.1f;
             proc = false;
         }
     }
