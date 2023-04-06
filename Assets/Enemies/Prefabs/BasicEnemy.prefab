@@ -374,10 +374,13 @@ MonoBehaviour:
   currentHP: 5
   maxHP: 5
   HP: {fileID: 4544472573843151680}
+  doesDeactivate: 0
+  sGC: {fileID: 0}
+  setAct: {fileID: 0}
+  lvlBoss: 0
   minCoin: 1
   maxCoin: 5
   isBoss: 0
-  sE: {fileID: 0}
   spawnEffect: {fileID: 7815057208917191966, guid: 771e328d74d83d14e913f905f69abf0e, type: 3}
   spEn: {fileID: 0}
   playerPoint: {fileID: 0}
@@ -539,15 +542,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8356561799129503450, guid: 1426781c158992b44b4d5c2eb28836fe, type: 3}
       propertyPath: InitialModule.startColor.maxColor.b
-      value: 0.9960785
+      value: 0.23905303
       objectReference: {fileID: 0}
     - target: {fileID: 8356561799129503450, guid: 1426781c158992b44b4d5c2eb28836fe, type: 3}
       propertyPath: InitialModule.startColor.maxColor.g
-      value: 0.70980394
+      value: 0.4958036
       objectReference: {fileID: 0}
     - target: {fileID: 8356561799129503450, guid: 1426781c158992b44b4d5c2eb28836fe, type: 3}
       propertyPath: InitialModule.startColor.maxColor.r
-      value: 0
+      value: 0.6415094
       objectReference: {fileID: 0}
     - target: {fileID: 8356561799129503450, guid: 1426781c158992b44b4d5c2eb28836fe, type: 3}
       propertyPath: InitialModule.startColor.minMaxState

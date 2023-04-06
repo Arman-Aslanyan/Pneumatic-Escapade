@@ -377,6 +377,7 @@ MonoBehaviour:
   doesDeactivate: 0
   sGC: {fileID: 0}
   setAct: {fileID: 0}
+  lvlBoss: 0
   minCoin: 2
   maxCoin: 5
   isBoss: 0
@@ -537,15 +538,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5820234125015345676, guid: e80257fe61045e54895f0c341c1e4ae4, type: 3}
       propertyPath: InitialModule.startColor.maxColor.b
-      value: 0.054901965
+      value: 0.054901958
       objectReference: {fileID: 0}
     - target: {fileID: 5820234125015345676, guid: e80257fe61045e54895f0c341c1e4ae4, type: 3}
       propertyPath: InitialModule.startColor.maxColor.g
-      value: 1
+      value: 0.83674175
       objectReference: {fileID: 0}
     - target: {fileID: 5820234125015345676, guid: e80257fe61045e54895f0c341c1e4ae4, type: 3}
       propertyPath: InitialModule.startColor.maxColor.r
-      value: 0.90196085
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5820234125015345676, guid: e80257fe61045e54895f0c341c1e4ae4, type: 3}
       propertyPath: InitialModule.startColor.minMaxState

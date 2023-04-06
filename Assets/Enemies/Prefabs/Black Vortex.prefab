@@ -19311,7 +19311,7 @@ RectTransform:
   m_GameObject: {fileID: 1947972283252436177}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.7601, y: 1.7601, z: 1.7601}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1474630127464382892}
@@ -19359,8 +19359,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294901956
-  m_fontColor: {r: 0.7688451, g: 0, b: 1, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -72487,7 +72487,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0.38, y: 1.3}
+  m_AnchoredPosition: {x: 0.38, y: 2.08}
   m_SizeDelta: {x: 5.6419, y: 1.8492}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &7682836847036992438
@@ -72572,7 +72572,7 @@ GameObject:
   - component: {fileID: 5439488159351188281}
   - component: {fileID: 3956039367983603537}
   m_Layer: 8
-  m_Name: BlackHole
+  m_Name: Black Vortex
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -72587,7 +72587,7 @@ Transform:
   m_GameObject: {fileID: 6780384169559176932}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.83, y: 5.72, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1474630127464382892}
@@ -72814,12 +72814,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5bd13711183c064f893038a35b36768, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentHP: 150
-  maxHP: 150
+  currentHP: 1000
+  maxHP: 1000
   HP: {fileID: 1563757312581502017}
   doesDeactivate: 0
   sGC: {fileID: 3956039367983603537}
   setAct: {fileID: 0}
+  lvlBoss: 0
   minCoin: 20
   maxCoin: 50
   isBoss: 1

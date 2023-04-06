@@ -11,7 +11,7 @@ public class BackupMagazine : Item
         if (proc)
         {
             foreach (ParticleGuns weapon in Weapons)
-                weapon.stats.ammoMax = (int)(weapon.stats.ammoMax * 1.025f);
+                weapon.stats.ammoMax = (int)(weapon.stats.ammoMax += 1);
             proc = false;
         }
     }
