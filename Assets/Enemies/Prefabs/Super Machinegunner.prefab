@@ -162,7 +162,7 @@ Transform:
   m_GameObject: {fileID: 2314525091567342352}
   m_LocalRotation: {x: 0.34454814, y: -0.6174841, z: 0.6174841, w: -0.34454814}
   m_LocalPosition: {x: 0.111, y: -0.032, z: -0.02}
-  m_LocalScale: {x: 0.20935026, y: 0.20935029, z: 0.20935026}
+  m_LocalScale: {x: 1.1382582, y: 1.1382585, z: 1.1382582}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6780384169559176937}
@@ -1002,7 +1002,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 5
+      scalar: 13.38
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -4983,7 +4983,7 @@ Transform:
   m_GameObject: {fileID: 5922678198175942777}
   m_LocalRotation: {x: -0.6283668, y: -0.32427642, z: 0.32427642, w: 0.6283668}
   m_LocalPosition: {x: -0.139, y: 0.278, z: -0.02}
-  m_LocalScale: {x: 0.20935032, y: 0.20935029, z: 0.20935029}
+  m_LocalScale: {x: 1.1382586, y: 1.1382585, z: 1.1382585}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6780384169559176937}
@@ -5823,7 +5823,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 5
+      scalar: 13.38
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -9804,7 +9804,7 @@ Transform:
   m_GameObject: {fileID: 6051669942467965141}
   m_LocalRotation: {x: 0.6258486, y: -0.3291103, z: 0.3291103, w: -0.6258486}
   m_LocalPosition: {x: 0.115, y: 0.278, z: -0.02}
-  m_LocalScale: {x: 0.20935029, y: 0.20935029, z: 0.20935029}
+  m_LocalScale: {x: 1.1382585, y: 1.1382585, z: 1.1382585}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6780384169559176937}
@@ -10644,7 +10644,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 5
+      scalar: 13.38
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -14787,9 +14787,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 3
   m_Sprite: {fileID: 798427905, guid: 6a77695c2bb396d478dde787ccab87da, type: 3}
-  m_Color: {r: 1, g: 0.5501839, b: 0, a: 1}
+  m_Color: {r: 0.4059229, g: 0, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -14921,7 +14921,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.2777778, y: 1.2555555}
+    oldSize: {x: 3.2, y: 3.2}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -14945,10 +14945,12 @@ MonoBehaviour:
   currentHP: 150
   maxHP: 150
   HP: {fileID: 1563757312581502017}
+  doesDeactivate: 0
+  sGC: {fileID: 0}
+  setAct: {fileID: 0}
   minCoin: 20
   maxCoin: 50
   isBoss: 1
-  sE: {fileID: 0}
   spawnEffect: {fileID: 7815057208917191966, guid: 771e328d74d83d14e913f905f69abf0e, type: 3}
   spEn: {fileID: 0}
   playerPoint: {fileID: 0}
@@ -14999,7 +15001,7 @@ Transform:
   m_GameObject: {fileID: 7658945905645676928}
   m_LocalRotation: {x: -0.34929767, y: -0.6148099, z: 0.6148099, w: 0.34929767}
   m_LocalPosition: {x: -0.102, y: -0.021, z: -0.02}
-  m_LocalScale: {x: 0.20935029, y: 0.20935029, z: 0.20935029}
+  m_LocalScale: {x: 1.1382585, y: 1.1382585, z: 1.1382585}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6780384169559176937}
@@ -15839,7 +15841,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 5
+      scalar: 13.38
       minScalar: 10
       maxCurve:
         serializedVersion: 2

@@ -374,10 +374,12 @@ MonoBehaviour:
   currentHP: 10
   maxHP: 10
   HP: {fileID: 4544472573843151680}
+  doesDeactivate: 0
+  sGC: {fileID: 0}
+  setAct: {fileID: 0}
   minCoin: 2
   maxCoin: 6
   isBoss: 0
-  sE: {fileID: 0}
   spawnEffect: {fileID: 7815057208917191966, guid: 771e328d74d83d14e913f905f69abf0e, type: 3}
   spEn: {fileID: 0}
   playerPoint: {fileID: 0}
@@ -603,7 +605,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7573740631257060983, guid: 71fe7c3b5955c1a4f8d79dc972338169, type: 3}
       propertyPath: CollisionModule.collidesWith.m_Bits
-      value: 95
+      value: 1119
       objectReference: {fileID: 0}
     - target: {fileID: 7573740631257060983, guid: 71fe7c3b5955c1a4f8d79dc972338169, type: 3}
       propertyPath: InitialModule.startColor.maxColor.b
